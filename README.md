@@ -10,7 +10,7 @@
 
 Liste, diğer açık kaynaklı listelerden gelen eklemelerle birlikte Front End geliştiricilerinin yıllara dayanan deneyimlerinin bir ürünüdür.
 
-*Front-End Checlist'i daha fazla insanın duymasına yardımcı olmak için Product Hunt üzerinden oy verin.*
+*Front-End Checklist'i daha fazla insanın duymasına yardımcı olmak için Product Hunt üzerinden oy verin.*
 [![](http://res.cloudinary.com/djnyaloac/image/upload/v1508896898/upvote-producthunt_vzys4c.jpg)](https://www.producthunt.com/posts/front-end-checklist)
 
 ## İçindekiler
