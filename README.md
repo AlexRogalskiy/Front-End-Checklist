@@ -30,9 +30,9 @@ Liste, diğer açık kaynaklı listelerden gelen eklemelerle birlikte Front End 
 
 Çoğu proje için **Front-End Checklist** içerisindeki öğelerin tamamının kullanılması gerekir. Ancak bazı öğelerin kullanımı ihmal edilebilir. (Örneğin bir yönetim paneli uygulamasında, RSS beslemesine ihtiyacınız olmayabilir). Öğelerin önemi konusunda 3 seviye belirledik:
 
-* ![Düşük][low_img] etiketi **önerilen** ancak bazı durumlarda öğeyi es geçebileceğinizi ifade eder.
+* ![Düşük][low_img] etiketi **önerilen** ancak bazı durumlarda es geçebileceğiniz öğeleri ifade eder.
 * ![Orta][medium_img] etiketi **kesinlikle önerilen** ve sadece nadir durumlarda görmezden gelebileceğiniz öğeleri ifade eder. Bazı elementlerin ihmal edilmesi performans ve SEO konusunda kötü sonuçlara neden olabilir.
-* ![Yüksek][high_img] etiketi öğe kullanımının **zorunlu** olduğunu ve hiç bir şartta görmezden gelinemeyeceğini ifade eder. Aksi halde sayfanızda fonksiyonel kayıplar yaşayabilir, ulaşılabilirlik ve seo konusunda ciddi sorunlarla karşılaşabilirsiniz. Test önceliği daima bu etikete sahip öğelerdedir.
+* ![Yüksek][high_img] etiketi öğe kullanımının **zorunlu** olduğunu ve hiçbir şartta görmezden gelinemeyeceğini ifade eder. Aksi halde sayfanızda fonksiyonel kayıplar yaşayabilir, ulaşılabilirlik ve SEO konusunda ciddi sorunlarla karşılaşabilirsiniz. Test önceliği daima bu etikete sahip öğelerdedir.
 
 Bazı kaynaklar içeriğin türünü anlayabilmeniz için çeşitli ifadeler içerir.
 
@@ -44,18 +44,18 @@ Bazı kaynaklar içeriğin türünü anlayabilmeniz için çeşitli ifadeler iç
 
 ## Head
 
-> **Notes:** You can find [a list of everything](https://github.com/joshbuchea/HEAD) that could be found in the `<head>` of an HTML document.
+> **Notlar:** HTML dökümanının `<head>` bölümünde bulunması gereken elementlerin tam listesini [burada](https://github.com/mkg0/HEAD) bulabilirsiniz.
 
 ### Meta tag
 
-* [ ] **Doctype:** ![High][high_img] The Doctype is HTML5 and is at the top of all your HTML pages.
+* [ ] **Doctype:** ![High][high_img] Doctype, HTML5'dir ve tüm HTML sayfalarınızın en üstünde yer almalıdır.
 
 ```html
 <!-- Doctype HTML5 -->
 <!doctype html>
 ```
 
-> * 📖 [Determining the character encoding - HTML5 W3C](https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding)
+> * 📖 [Karakter kodlamasını belirleme - HTML5 W3C](https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding)
 
 *The next 3 meta tags (Charset, X-UA Compatible and Viewport) need to come first in the head.*
 
