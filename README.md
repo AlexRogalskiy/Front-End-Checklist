@@ -8,9 +8,9 @@
 
 **Front-End Checklist** HTML sayfanızı yayına almadan önce test etmeniz gereken tüm öğelerin kapsamlı bir listesidir.
 
-Liste, diğer açık kaynaklı listelerden gelen eklemelerle birlikte Front End geliştiricilerinin yıllara dayanan deneyimlerine dayanıyor.
+Liste, diğer açık kaynaklı listelerden gelen eklemelerle birlikte Front End geliştiricilerinin yıllara dayanan deneyimlerinin bir ürünüdür.
 
-*Product Hunt üzerinde oy vererek Front-End Checlist'i daha fazla insanın duymasına yardım edin.*
+*Front-End Checlist'i daha fazla insanın duymasına yardımcı olmak için Product Hunt üzerinden oy verin.*
 [![](http://res.cloudinary.com/djnyaloac/image/upload/v1508896898/upvote-producthunt_vzys4c.jpg)](https://www.producthunt.com/posts/front-end-checklist)
 
 ## İçindekiler
@@ -28,7 +28,7 @@ Liste, diğer açık kaynaklı listelerden gelen eklemelerle birlikte Front End 
 
 ## Nasıl kullanılır?
 
-Çoğu proje için **Front-End Checklist** içerisindeki öğelerin tamamı kullanılmalıdır. Ancak bazı öğelerin kullanımı gerekli olmayabilir. (Örneğin bir yönetim paneli uygulamasında, RSS beslemesine ihtiyacınız olmayabilir). Öğelerin önemi konusunda 3 seviye belirledik:
+Çoğu proje için **Front-End Checklist** içerisindeki öğelerin tamamının kullanılması gerekir. Ancak bazı öğelerin kullanımı ihmal edilebilir. (Örneğin bir yönetim paneli uygulamasında, RSS beslemesine ihtiyacınız olmayabilir). Öğelerin önemi konusunda 3 seviye belirledik:
 
 * ![Düşük][low_img] etiketi **önerilen** ancak bazı durumlarda öğeyi es geçebileceğinizi ifade eder.
 * ![Orta][medium_img] etiketi **kesinlikle önerilen** ve sadece nadir durumlarda görmezden gelebileceğiniz öğeleri ifade eder. Bazı elementlerin ihmal edilmesi performans ve SEO konusunda kötü sonuçlara neden olabilir.
