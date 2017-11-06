@@ -6,39 +6,39 @@
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/thedaviddias/front-end-checklist)
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-The **Front-End Checklist** is an exhaustive list of all elements you need to have / to test before launching your site / HTML page to production.
+**Front-End Checklist** HTML sayfanızı yayına almadan önce test etmeniz gereken tüm öğelerin kapsamlı bir listesidir.
 
-It is based on Front-End developers' years of experience, with the additions coming from some other open-source checklists.
+Liste, diğer açık kaynaklı listelerden gelen eklemelerle birlikte Front End geliştiricilerinin yıllara dayanan deneyimlerine dayanıyor.
 
-*Help to share the Front-End Checklist by voting and recommending on Product Hunt*
+*Product Hunt üzerinde oy vererek Front-End Checlist'i daha fazla insanın duymasına yardım edin.*
 [![](http://res.cloudinary.com/djnyaloac/image/upload/v1508896898/upvote-producthunt_vzys4c.jpg)](https://www.producthunt.com/posts/front-end-checklist)
 
-## Table of Contents
+## İçindekiler
 
 1. **[Head](#head)**
 2. **[HTML](#html)**
 3. **[Webfonts](#webfonts)**
 4. **[CSS](#css)**
-5. **[Images](#images)**
+5. **[Görseller](#images)**
 6. **[JavaScript](#javascript)**
-7. **[Security](#security)**
-8. **[Performance](#performance-1)**
-9. **[Accessibility](#accessibility)**
+7. **[Güvenlik](#security)**
+8. **[Performans](#performance-1)**
+9. **[Ulaşılabilirlik](#accessibility)**
 10. **[SEO](#seo)**
 
-## How to use?
+## Nasıl kullanılır?
 
-All items in the **Front-End Checklist** are required for the majority of the projects, but some elements can be omitted or are not essential (in the case of an administration web app, you may not need RSS feed for example). We choose to use 3 levels of flexibility:
+Çoğu proje için **Front-End Checklist** içerisindeki öğelerin tamamı kullanılmalıdır. Ancak bazı öğelerin kullanımı gerekli olmayabilir. (Örneğin bir yönetim paneli uygulamasında, RSS beslemesine ihtiyacınız olmayabilir). Öğelerin önemi konusunda 3 seviye belirledik:
 
-* ![Low][low_img] means that the item is **recommended** but can be omitted in some particular situations.
-* ![Medium][medium_img] means that the item is **highly recommended** and can eventually be omitted in some really particular cases. Some elements, if omitted, can have bad repercussions in terms of performance or SEO.
-* ![High][high_img] means that the item **can't be omitted** by any reason. You may cause a dysfunction in your page or have accessibility or SEO issues. The testing priority needs to be on these elements first.
+* ![Düşük][low_img] etiketi **önerilen** ancak bazı durumlarda öğeyi es geçebileceğinizi ifade eder.
+* ![Orta][medium_img] etiketi **kesinlikle önerilen** ve sadece nadir durumlarda görmezden gelebileceğiniz öğeleri ifade eder. Bazı elementlerin ihmal edilmesi performans ve SEO konusunda kötü sonuçlara neden olabilir.
+* ![Yüksek][high_img] etiketi öğe kullanımının **zorunlu** olduğunu ve hiç bir şartta görmezden gelinemeyeceğini ifade eder. Aksi halde sayfanızda fonksiyonel kayıplar yaşayabilir, ulaşılabilirlik ve seo konusunda ciddi sorunlarla karşılaşabilirsiniz. Test önceliği daima bu etikete sahip öğelerdedir.
 
-Some resources possess an emoticon to help you understand which type of content / help you may find on the checklist:
+Bazı kaynaklar içeriğin türünü anlayabilmeniz için çeşitli ifadeler içerir.
 
-* 📖: documentation or article
-* 🛠: online tool / testing tool
-* 📹: media or video content
+* 📖: dokümantasyon veya makale
+* 🛠: çevrimiçi araç / test aracı
+* 📹: medya veya video içeriği
 
 ---
 
