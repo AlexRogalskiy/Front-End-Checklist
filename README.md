@@ -82,17 +82,15 @@ Bazı kaynaklar içeriğin türünü anlayabilmeniz için çeşitli ifadeler iç
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
-* [ ] **Title:** ![High][high_img] Title tüm sayfalarda kullanılmalıdır. (SEO: 
-
-Google, başlıkta kullanılan karakterlerin piksel genişliğini hesaplar; 472 ve 482 piksel arasında kesilecektir. Buna göre ortalama karakter limiti 55 civarındadır).
+* [ ] **Title:** ![High][high_img] Başlık tüm sayfalarda kullanılmalıdır. (SEO: Google, başlıkta kullanılan karakterlerin piksel genişliğini hesaplar; 472 ve 482 piksel arasında kesilecektir. Buna göre ortalama karakter limiti 55 civarındadır).
 
 ```html
 <!-- Döküman Başlığı -->
 <title>55 karakterden daha kısa bir başlık</title>
 ```
 
-> * 📖 [Title - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
-> * 🛠 [SERP Snippet Oluşturucu](https://www.sistrix.com/serp-snippet-generator/)
+> * 📖 [Başlık - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
+> * 🛠 [SERP Snippet Generator](https://www.sistrix.com/serp-snippet-generator/)
 
 * [ ] **Description:** ![High][high_img] Eşsiz bir meta açıklaması bulunmalı ve açıklama uzunluğu 150 karakteri aşmamalıdır.
 
@@ -101,7 +99,7 @@ Google, başlıkta kullanılan karakterlerin piksel genişliğini hesaplar; 472 
 <meta name="description" content="Description of the page less than 150 characters">
 ```
 
-> * 📖[Meta Description - HTML - MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_an_author_and_description)
+> * 📖[Meta Açıklaması - HTML - MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_an_author_and_description)
 
 * [ ] **Favicons:** ![Medium][medium_img] Tüm faviconlar ayrı ayrı oluşturulmalı ve doğru şekilde ayarlanmalıdır. Eğer sadece `favicon.ico` dosyasına sahipseniz, dosyayı sitenizin ana klasörüne koyun. Normal şartlarda dosyayı işaret eden bir element kullanmanıza gerek yok ancak aşağıdaki örnekte olduğu gibi döküman içerisinde belirtmek iyi bir pratik olabilir. Günümüzde `.ico` formatında (boyut: 32x32px). **PNG** biçiminin kullanılması önerilmektedir.
 
@@ -118,23 +116,23 @@ Google, başlıkta kullanılan karakterlerin piksel genişliğini hesaplar; 472 
 > * 📖 [Favicons, Touch Icons, Tile Icons, etc. Which Do You Need? - CSS Tricks](https://css-tricks.com/favicon-quiz/)
 > * 📖 [PNG favicons - caniuse](https://caniuse.com/#feat=link-icon-png)
 
-* [ ] **Apple Touch Icon:** ![Low][low_img] Apple touch favicon apple-mobile-web-app-capable are present *(Create your Apple Icon file with at least 200x200px dimension to support all dimensions that you may need).*
+* [ ] **Apple Touch Icon:** ![Low][low_img] Apple touch favicon (apple-mobile-web-app-capable) kullanılmalıdır *(Desteklemek isteyebileceğiniz tüm boyutları karşılayacak, en az 200x200px boyutlarında bir Apple Icon oluşturun).*
 
 ```html
 <!-- Apple Touch Icon -->
 <link rel="apple-touch-icon" href="/custom-icon.png">
 ```
 
-> * 📖 [Configuring Web Applications](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
+> * 📖 [Web Uygulamalarını Yapılandırma](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
 
-- [ ] **Windows Tiles:**![Low][low_img] Windows tiles are present and linked.
+- [ ] **Windows Tiles:**![Low][low_img] Windows tiles kullanılmalı ve doğru şekilde belirtilmelidir.
 
 ```html
 <!-- Microsoft Tiles -->
 <meta name="msapplication-config" content="browserconfig.xml" />
 ```
 
-Minimum required xml markup for the browserconfig.xml file is as follows:
+Browserconfig.xml dosyası için gerekli minimum xml işaretlemesi aşağıdaki gibidir:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -150,27 +148,27 @@ Minimum required xml markup for the browserconfig.xml file is as follows:
 </browserconfig>
 ```
 
-> * 📖 [Browser configuration schema reference](https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx)
+> * 📖 [Tarayıcı yapılandırmaları için şema referansı](https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx)
 
-* [ ] **Canonical:** ![Medium][medium_img] Use `rel="canonical"` to avoid duplicate content.
+* [ ] **Canonical:** ![Medium][medium_img] Yinelenen içeriği önlemek için `rel =" canonical "` kullanın.
 
 ```html
-<!-- Helps prevent duplicate content issues -->
+<!-- Yinelenen içerik sorunlarını önlemeye yardımcı olur -->
 <link rel="canonical" href="http://example.com/2017/09/a-new-article-to-red.html">
 ```
 
-> * 📖 [Use canonical URLs - Search Console Help - Google Support](https://support.google.com/webmasters/answer/139066?hl=en)
-> * 📖 [5 common mistakes with rel=canonical - Google Webmaster Blog](https://webmasters.googleblog.com/2013/04/5-common-mistakes-with-relcanonical.html)
+> * 📖 [Kanonik URL'leri kullanın - Search Console Yardım - Google Support](https://support.google.com/webmasters/answer/139066?hl=en)
+> * 📖 [rel=canonical ile ilgili sıkça yapılan yapılan 5 hata - Google Webmaster Blog](https://webmasters.googleblog.com/2013/04/5-common-mistakes-with-relcanonical.html)
 
 ### HTML tags
 
-* [ ] **Language attribute:** ![High][high_img] The `lang` attribute of your website is specified and related to the language of the current page.
+* [ ] **Language attribute:** ![High][high_img] Web sitenizde `lang` niteliğini kullanmalı ve geçerli sayfanın dili ile ilişkilendirmelisiniz.
 
 ```html
 <html lang="en">
 ```
 
-* [ ] **Direction attribute:** ![Medium][medium_img] The direction of lecture is specified on the html tag (It can be used on another HTML tag).
+* [ ] **Direction attribute:** ![Medium][medium_img] Yazı içeriğinin yönü html etiketinde belirtilmelidir. (Farklı bir html etiketi kullanılabilir).
 
 ```html
 <html dir="rtl">
