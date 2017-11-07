@@ -57,56 +57,58 @@ Bazı kaynaklar içeriğin türünü anlayabilmeniz için çeşitli ifadeler iç
 
 > * 📖 [Karakter kodlamasını belirleme - HTML5 W3C](https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding)
 
-*The next 3 meta tags (Charset, X-UA Compatible and Viewport) need to come first in the head.*
+*Sonraki 3 meta tag (Charset, X-UA Compatible ve Viewport) head bölümünün en başında yer almalıdır.*
 
-* [ ] **Charset:** ![High][high_img] The charset (UTF-8) is declared correctly.
+* [ ] **Charset:** ![High][high_img] Karakter seti (UTF-8) doğru şekilde tanımlanmalıdır.
 
 ```html
-<!-- Set character encoding for the document -->
+<!-- Dökuman için karakter kodlaması -->
 <meta charset="utf-8">
 ```
 
-* [ ] **X-UA-Compatible:** ![Medium][medium_img] The X-UA-Compatible meta tag is present.
+* [ ] **X-UA-Compatible:** ![Medium][medium_img] X-UA-Compatible meta tagı yer almalıdır.
 
 ```html
-<!-- Instruct Internet Explorer to use its latest rendering engine -->
+<!-- Internet Explorer'a en son oluşturma motorunu kullanmasını söyleyin -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 ```
 
-> * 📖 [Specifying legacy document modes (Internet Explorer)](https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx)
+> * 📖 [Eski döküman modlarını ayarlama (Internet Explorer)](https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx)
 
-* [ ] **Viewport:** ![High][high_img] The viewport is declared correctly.
+* [ ] **Viewport:** ![High][high_img] Viewport doğru şekilde tanımlanmalıdır.
 
 ```html
-<!-- Viewport for responsive web design -->
+<!-- Responsive bir tasarım için viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
-* [ ] **Title:** ![High][high_img] A title is used on all pages (SEO: Google calculate the pixel width of the characters used in the title, cut off between 472 and 482 pixels. Average character limit would be around 55-characters).
+* [ ] **Title:** ![High][high_img] Title tüm sayfalarda kullanılmalıdır. (SEO: 
+
+Google, başlıkta kullanılan karakterlerin piksel genişliğini hesaplar; 472 ve 482 piksel arasında kesilecektir. Buna göre ortalama karakter limiti 55 civarındadır).
 
 ```html
-<!-- Document Title -->
-<title>Page Title less than 55 characters</title>
+<!-- Döküman Başlığı -->
+<title>55 karakterden daha kısa bir başlık</title>
 ```
 
 > * 📖 [Title - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
-> * 🛠 [SERP Snippet Generator](https://www.sistrix.com/serp-snippet-generator/)
+> * 🛠 [SERP Snippet Oluşturucu](https://www.sistrix.com/serp-snippet-generator/)
 
-* [ ] **Description:** ![High][high_img] A meta description is provided, it is unique and doesn't possess more than 150 characters.
+* [ ] **Description:** ![High][high_img] Eşsiz bir meta açıklaması bulunmalı ve açıklama uzunluğu 150 karakteri aşmamalıdır.
 
 ```html
-<!-- Meta Description -->
+<!-- Meta Açıklaması -->
 <meta name="description" content="Description of the page less than 150 characters">
 ```
 
 > * 📖[Meta Description - HTML - MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_an_author_and_description)
 
-* [ ] **Favicons:** ![Medium][medium_img] Each favicon has been created and displays correctly. If you have only a `favicon.ico`, put it at the root of your site. Normally you won't need to use any markup. However, it's still good practice to link to it using the example below. Today, **PNG format is recommended** over `.ico` format (dimensions: 32x32px).
+* [ ] **Favicons:** ![Medium][medium_img] Tüm faviconlar ayrı ayrı oluşturulmalı ve doğru şekilde ayarlanmalıdır. Eğer sadece `favicon.ico` dosyasına sahipseniz, dosyayı sitenizin ana klasörüne koyun. Normal şartlarda dosyayı işaret eden bir element kullanmanıza gerek yok ancak aşağıdaki örnekte olduğu gibi döküman içerisinde belirtmek iyi bir pratik olabilir. Günümüzde `.ico` formatında (boyut: 32x32px). **PNG** biçiminin kullanılması önerilmektedir.
 
 ```html
-<!-- Standard favicon -->
+<!-- Standart favicon -->
 <link rel="icon" type="image/x-icon" href="https://example.com/favicon.ico">
-<!-- Recommended favicon format -->
+<!-- Önerilen favicon biçimi -->
 <link rel="icon" type="image/png" href="https://example.com/favicon.png">
 ```
 
