@@ -280,49 +280,49 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 ## Webfonts
 
-> **Notlar:** Using webfonts may cause Flash Of Unstyled Text/Flash Of Invisible Text - consider having fallback fonts and/or utilizing webfont loaders to control behavior.
-> * 📖 [Google Technical considerations about webfonts](https://developers.google.com/fonts/docs/technical_considerations)
+> **Notlar:** Webfont kullanımı stillendirilmemiş / görünmez yazılara neden olabilir - may cause Flash Of Unstyled Text/Flash Of Invisible Text - Fallback fontlar kullanmayı ya da webfont yükleyicilerini kullanarak bunu önleyin.
+> * 📖 [Google'ın webfontlar konusunda düşünceleri](https://developers.google.com/fonts/docs/technical_considerations)
 
-* [ ] **Webfont format:** ![High][high_img] WOFF, WOFF2 and TTF are supported by all modern browsers.
+* [ ] **Webfont format:** ![High][high_img] WOFF, WOFF2 ve TTF tüm modern tarayıcılar tarafından desteklenir.
 
 > * 📖 [WOFF - Web Open Font Format - Caniuse](https://caniuse.com/#feat=woff).
 > * 📖 [WOFF 2.0 - Web Open Font Format - Caniuse](https://caniuse.com/#feat=woff2).
-> * 📖 [TTF/OTF - TrueType and OpenType font support](https://caniuse.com/#feat=ttf)
-> * 📖 [Using @font-face - CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/)
+> * 📖 [TTF/OTF - TrueType ve OpenType font desteği](https://caniuse.com/#feat=ttf)
+> * 📖 [@font-face kullanımı - CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/)
 
-* [ ] **Webfont size:** ![High][high_img] Webfont sizes don't exceed 2 MB (all variants included).
+* [ ] **Webfont size:** ![High][high_img] Webfont boyutları 2 MB'ı aşmamalıdır. (Tüm türevleri ile birlikte).
 
-* [ ] **Webfont loader:** ![Low][low_img] Control loading behavior with a webfont loader
+* [ ] **Webfont loader:** ![Low][low_img] Webfont yükleyiciler ile yükleme akışını kontrol edin.
 
 > * 🛠 [Typekit Web Font Loader](https://github.com/typekit/webfontloader)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ başa dön](#table-of-contents)**
 
 ---
 
 ## CSS
 
-> **Notes:** Take a look at [CSS guidelines](https://cssguidelin.es/) and [Sass Guidelines](https://sass-guidelin.es/) followed by most  Front-End developers. If you have a doubt about CSS properties, you can visit [CSS Reference](http://cssreference.io/). There is also a short [Code Guide](http://codeguide.co/) for consistency.
+> **Notlar:** Çoğu Front-End geliştiricinin takip ettiği [CSS Kılavuzları](https://cssguidelin.es/) ve [Sass Kılavuzları](https://sass-guidelin.es/)nı inceleyin. Eğer CSS özellikleri konusunda çekinceleriniz var ise, [CSS Kaynakça](http://cssreference.io/)sını ziyaret edin. Tutarlılık için bu kısa [Kod Kılavuzu](http://codeguide.co/) da kullanılabilir.
 
-* [ ] **Responsive Web Design:** ![High][high_img] The website is using responsive web design.
-* [ ] **CSS Print:** ![Medium][medium_img] A print stylesheet is provided and is correct on each page.
-* [ ] **Preprocessors:** ![Low][low_img] Your page is using a CSS preprocessor ([Sass](http://sass-lang.com/) is preferred).
-* [ ] **Unique ID:** ![High][high_img] If IDs are used, they are unique to a page.
-* [ ] **Reset CSS:** ![High][high_img] A CSS reset (reset, normalize or reboot) is used and up to date. *(If you are using a CSS Framework like Bootstrap or Foundation, a Normalize is already included into it.)*
+* [ ] **Responsive Web Design:** ![High][high_img] Web sitesinin tasarımı responsive olmalı.
+* [ ] **CSS Print:** ![Medium][medium_img] Baskı(yazdırma) için tüm sayfalarda geçerli olan bir CSS bulunmalı.
+* [ ] **Preprocessors:** ![Low][low_img] Sayfanız bir CSS önişlemcisi kullanmalı ([Sass](http://sass-lang.com/) önerilir).
+* [ ] **Unique ID:** ![High][high_img] Eğer ID kullanılmışsa tümü eşsiz olmalı.
+* [ ] **Reset CSS:** ![High][high_img] Güncel bir CSS reset (reset, normalize ya da reboot) kullanılmalı. *(Eğer Bootstrap ya da Foundation gibi bir CSS Framework kullanıyorsanız Normalize hali hazırda buna dahil edilmiştir)*
 
 > * 📖 [Reset.css](https://meyerweb.com/eric/tools/css/reset/)
 > * 📖 [Normalize.css](https://necolas.github.io/normalize.css/)
 > * 📖 [Reboot](https://getbootstrap.com/docs/4.0/content/reboot/)
 
-* [ ] **JS prefix:** ![Low][low_img] All classes (or id- used in JavaScript files) begin with **js-** and are not styled into the CSS files.
+* [ ] **JS prefix:** ![Low][low_img] Javascript dosyalarındaki tüm sınıflar (ya da IDler) **js-** ile başlamalı ve CSS dosyaları içerisinde kullanılmamalıdır.
 
 ```html
 <div id="js-slider" class="my-slider">
-<!-- Or -->
+<!-- Ya da -->
 <div id="id-used-by-cms" class="js-slider my-slider">
 ```
 
-* [ ] **Embedded or inline CSS:** ![High][high_img] Avoid at all cost embeding CSS in `<style>` tags or using inline CSS: only use for valid reasons (e.g. background-image for slider, critical CSS).
+* [ ] **Embedded or inline CSS:** ![High][high_img] `<style>` etiketleri arasında ya da satır içi CSS kullanmaktan kaçının: sadece geçerli bir sebebiniz varsa kullanın (örn. slider için arkaplan resmi, kritik CSS).
 * [ ] **Vendor prefixes:** ![High][high_img] CSS vendor prefixes are used and are generated accordingly with your browser support compatibility.
 
 > * 🛠 [Autoprefixer CSS online](https://autoprefixer.github.io/)
