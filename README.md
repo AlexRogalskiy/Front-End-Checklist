@@ -168,7 +168,7 @@ Browserconfig.xml dosyası için gerekli minimum xml işaretlemesi aşağıdaki 
 <html lang="en">
 ```
 
-* [ ] **Direction attribute:** ![Medium][medium_img] Yazı içeriğinin yönü html etiketinde belirtilmelidir. (Farklı bir html etiketi kullanılabilir).
+* [ ] **Direction attribute:** ![Medium][medium_img] Sayfa yazıların yönü html etiketinde belirtilmelidir. (Farklı bir html etiketi kullanılabilir).
 
 ```html
 <html dir="rtl">
@@ -176,30 +176,31 @@ Browserconfig.xml dosyası için gerekli minimum xml işaretlemesi aşağıdaki 
 
 > * 📖 [dir - HTML - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir)
 
-* [ ] **Alternate language:** ![Low][low_img] The language tag of your website is specified and related to the language of the current page.
+* [ ] **Alternate language:** ![Low][low_img] Aktif olan sayfanın dili belirtilmelidir.
 
 ```html
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
 ```
 
-* [ ] **Conditional comments:** ![Low][low_img] Conditional comments are present for IE if needed.
+* [ ] **Conditional comments:** ![Low][low_img] Gerekirse IE için koşullu ifadeler kullanılmalıdır.
 
-> * 📖 [About conditional comments (Internet Explorer) - MSDN - Microsoft](https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx)
+> * 📖 [Koşullu ifadeler hakkında (Internet Explorer) - MSDN - Microsoft](https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx)
 
-* [ ] **RSS feed:** ![Low][low_img] If your project is a blog or has articles, an RSS link was provided.
+* [ ] **RSS feed:** ![Low][low_img] Eğer projeniz bir blog ise ya da makaleler içeriyor ise; bir RSS link sağlanmalıdır.
 
 * [ ] **Inline critical CSS:** ![Medium][medium_img] CSS which styles content that is immediately visible during pageload ("above the fold content") is called "critical CSS". It is embedded before your principal CSS call and between `<style></style>` in a single line (minified).
-> * 🛠 [Critical by Addy Osmani on GitHub](https://github.com/addyosmani/critical) automates this.
+Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi gereken CSS betikleri kritik CSS olarak adlandırılır. Genel CSS içeriklerinden önce `<style></ style>` arasında tek bir satırda (sıkıştırılmış) verilmelidir.
+> * 🛠 [Critical, Addy Osmani on GitHub](https://github.com/addyosmani/critical) bu işlemi otomatik hale getirir.
 
-* [ ] **CSS order:** ![High][high_img] All CSS files are loaded before any JavaScript files in the `<head>`. (Except the case where sometimes JS files are loaded asynchronously on top of your page).
+* [ ] **CSS order:** ![High][high_img] Tüm CSS dosyaları JavaScript dosyalarından önce `<head>` bölümünde tanımlanmalıdır. (JS dosyalarının asenkron olarak sayfanın en üstünde yüklenebildiği durumlar dışında).
 
-### Social meta
+### Sosyal meta
 
-***Facebook OG*** and ***Twitter Cards*** are, for any website, highly recommended. The other social media tags can be considered if you target a particular presence on those and want to ensure the display.
+***Facebook OG*** ve ***Twitter Cards*** tüm web siteleri için önerilir. Eğer belirli bir sosyal siteyi hedefliyor ve içeriklerinizi tanıtmak istiyorsanız diğer etiketlerde kullanılabilir.
 
-* [ ] **Facebook Open Graph:** ![Low][low_img] All Facebook Open Graph (OG) are tested and no one is missing or with a false information. Images need to be at least 600 x 315 pixels, 1200 x 630 pixels recommended.
+* [ ] **Facebook Open Graph:** ![Low][low_img] Tüm Facebook Open Graph (OG) verileri test edilmeli ve hiçbiri eksik ya da hatalı bilgi içermemelidir. Resimler en az 600 x 315 piksel boyutunda olmalıdır. 1200 x 630 piksel önerilir.
 
-> **Notes:** Using `og:image:width` and `og:image:height` will specify the image dimensions to the crawler so that it can render the image immediately without having to asynchronously download and process it.
+> **Notlar:** `og:image:width` ve `og:image:height` tanımlarını kullanarak resim boyutlarını belirtmeniz; örümceğin asenkron olarak resimleri yükleyip işleme sokmadan, direk kullanabilmesine olanak sağlayacaktır. 
 
 ```html
 <meta property="og:type" content="website">
@@ -209,14 +210,14 @@ Browserconfig.xml dosyası için gerekli minimum xml işaretlemesi aşağıdaki 
 <meta property="og:description" content="Description Here">
 <meta property="og:site_name" content="Site Name">
 <meta property="og:locale" content="en_US">
-<!-- Next tags are optional but recommended -->
+<!-- Sonraki etiketler opsiyoneldir ancak kullanılması önerilir -->
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 ```
 
-> * 📖 [A Guide to Sharing for Webmasters](https://developers.facebook.com/docs/sharing/webmasters/)
-> * 📖 [Best Practices - Sharing](https://developers.facebook.com/docs/sharing/best-practices/)
-> * 🛠 Test your page with the [Facebook OG testing](https://developers.facebook.com/tools/debug/)
+> * 📖 [Web Yöneticileri için Paylaşım Kılavuzu](https://developers.facebook.com/docs/sharing/webmasters/)
+> * 📖 [En İyi Teknikler - Paylaşım](https://developers.facebook.com/docs/sharing/best-practices/)
+> * 🛠 Sayfanızı [Facebook OG test aracı](https://developers.facebook.com/tools/debug/) ile test edin.
 
 * [ ] **Twitter Card:** ![Low][low_img]
 
@@ -230,56 +231,56 @@ Browserconfig.xml dosyası için gerekli minimum xml işaretlemesi aşağıdaki 
 <meta name="twitter:image" content="https://example.com/image.jpg">
 ```
 
-> * 📖 [Getting started with cards — Twitter Developers](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
-> * 🛠 Test your page with the [Twitter card validator](https://cards-dev.twitter.com/validator)
+> * 📖 [Twitter card'larına giriş — Twitter Developers](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
+> * 🛠 Sayfanızı [Twitter card doğrulayıcı](https://cards-dev.twitter.com/validator) ile test edin.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ başa dön](#table-of-contents)**
 
 ---
 
 ## HTML
 
-### Best practices
+### En iyi teknikler
 
-* [ ] **HTML5 Semantic Elements:** ![High][high_img] HTML5 Semantic Elements are used appropriately (header, section, footer, main...).
+* [ ] **HTML5 Semantik Elementler:** ![High][high_img] HTML5 Semantik Elementler doğru şekilde kullanılmalı (header, section, footer, main...).
 
 > * 📖 [HTML Reference](http://htmlreference.io/)
 
-* [ ] **Error pages:** ![High][high_img] Error 404 page and 5xx exist. Remember that the 5xx error pages need to have their CSS integrated (no external call on the current server).
+* [ ] **Hata sayfaları:** ![High][high_img] 404 Hata sayfası and 5xx sayfası bulunmalıdır. 5xx hata sayfalarındaki CSSlerin sayfa içine entegre edilmesi gerektiği unutulmamalıdır. (Sunucuya herhangi bir çağrı yapımamalıdır).
 
-* [ ] **Noopener:** ![Medium][medium_img] In case you are using external links with `target="_blank"`, your link should have a `rel="noopener"` attribute to prevent tab nabbing. If you need to support older versions of Firefox, use `rel="noopener noreferrer"`.
+* [ ] **Noopener:** ![Medium][medium_img] `target="_blank"` ile harici bağlantılar kullanmanız durumunda, tab nabbing'i önlemek için bağlantınız `rel="noopener"` niteliğine sahip olmalıdır. Eğer Firefox'un eski versiyonlarına destek vermek isterseniz `rel="noopener noreferrer"` şeklinde kullanabilirsiniz.
 
-> * 📖 [About rel=noopener](https://mathiasbynens.github.io/rel-noopener/)
+> * 📖 [rel=noopener Hakkında](https://mathiasbynens.github.io/rel-noopener/)
 
-* [ ] **Clean up comments:** ![Low][low_img] Unnecessary code needs to be removed before sending the page to production.
+* [ ] **Clean up comments:** ![Low][low_img] Yayına çıkmadan önce gereksiz kodlar sayfadan temizlenmelidir.
 
-### HTML testing
+### HTML testleri
 
-* [ ] **W3C compliant:** ![High][high_img] All pages need to be tested with the W3C validator to identify possible issues in the HTML code.
+* [ ] **W3C compliant:** ![High][high_img] HTML kodundaki olası sorunları tanımlamak için tüm sayfaların W3C doğrulayıcıyla test edilmesi gerekir.
 
 > * 🛠 [W3C validator](https://validator.w3.org/)
 
-* [ ] **HTML Lint:** ![High][high_img] I use tools to help me analyze any issues I could have on my HTML code.
+* [ ] **HTML Lint:** ![High][high_img] HTML içerisindeki tüm sorunları analiz etmek için aşağıdaki araçları kullanabilirsiniz.
 
 > * 🛠 [Dirty markup](https://dirtymarkup.com/)
 
 > * 🛠 [Sonar a linting tool for the web](https://sonarwhal.com/)
 
-* [ ] **Link checker:** ![High][high_img] There are no broken links in my page, verify that you don't have any 404 error.
+* [ ] **Link checker:** ![High][high_img] Sayfanızda kırık link bulunmamalıdır. Herhangi bir 404 hatası alınmadığını doğrulayın.
 
 > * 🛠 [W3C Link Checker](https://validator.w3.org/checklink)
 
-* [ ] **Adblockers test:** ![Medium][medium_img] Your website shows your content correctly with adblockers enabled (You can provide a message encouraging people to disable their adblocker).
+* [ ] **Adblockers test:** ![Medium][medium_img] Web siteniz reklam engelleme araçları aktifken doğru şekilde görüntülenebilmelidir (Bir mesaj ile ziyaretçileri eklentiyi pasif hale getirmeleri yönünde uyarabilirsiniz).
 
 
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ başa dön](#table-of-contents)**
 
 ---
 
 ## Webfonts
 
-> **Notes:** Using webfonts may cause Flash Of Unstyled Text/Flash Of Invisible Text - consider having fallback fonts and/or utilizing webfont loaders to control behavior.
+> **Notlar:** Using webfonts may cause Flash Of Unstyled Text/Flash Of Invisible Text - consider having fallback fonts and/or utilizing webfont loaders to control behavior.
 > * 📖 [Google Technical considerations about webfonts](https://developers.google.com/fonts/docs/technical_considerations)
 
 * [ ] **Webfont format:** ![High][high_img] WOFF, WOFF2 and TTF are supported by all modern browsers.
