@@ -323,76 +323,76 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 ```
 
 * [ ] **Embedded or inline CSS:** ![High][high_img] `<style>` etiketleri arasında ya da satır içi CSS kullanmaktan kaçının: sadece geçerli bir sebebiniz varsa kullanın (örn. slider için arkaplan resmi, kritik CSS).
-* [ ] **Vendor prefixes:** ![High][high_img] CSS vendor prefixes are used and are generated accordingly with your browser support compatibility.
+* [ ] **Vendor prefixes:** ![High][high_img] Vermek istediğiniz tarayıcı desteğine göre CSS tarayıcı önekleri kullanılmalıdır.
 
 > * 🛠 [Autoprefixer CSS online](https://autoprefixer.github.io/)
 
-### Performance
+### Performans
 
-- [ ] **Concatenation:** ![High][high_img] CSS files are concatenated in a single file *(Not for HTTP/2)*.
-- [ ] **Minification:** ![High][high_img] All CSS files are minified.
-- [ ] **Non-blocking:** ![Medium][medium_img] CSS files need to be non-blocking to prevent the DOM from taking time to load.
+- [ ] **Concatenation:** ![High][high_img] CSS dosyaları tek bir dosyada birleştirilmelidir *(HTTP/2 hariç)*.
+- [ ] **Minification:** ![High][high_img] TÜm CSS dosyaları sıkıştırılmalıdır.
+- [ ] **Non-blocking:** ![Medium][medium_img] CSS dosyaları DOM'un yüklenmesini engellememelidir.
 
 > * 📖 [loadCSS by filament group](https://github.com/filamentgroup/loadCSS)
 > * 📖 [Example of preload CSS using loadCSS](https://gist.github.com/thedaviddias/c24763b82b9991e53928e66a0bafc9bf)
 
-- [ ] **Unused CSS:** ![Low][low_img] Remove unused CSS.
+- [ ] **Unused CSS:** ![Low][low_img] Kullanılmayan CSS'ler silinmelidir.
 
 > * 🛠 [UnCSS Online](https://uncss-online.com/) 🛠
 > * 🛠 [PurifyCSS](https://github.com/purifycss/purifycss)
 > * 🛠 [Chrome DevTools Coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage)
 
 
-### CSS testing
+### CSS testleri
 
-* [ ] **Stylelint:** ![High][high_img] All CSS or SCSS files are without any errors.
+* [ ] **Stylelint:** ![High][high_img] Hiçbir CSS ya da SCSS dosyası hata içermemelidir.
 
 > * 🛠 [stylelint, a CSS linter](https://stylelint.io/)
 > * 📖 [Sass guidelines](https://sass-guidelin.es/)
 
-* [ ] **Responsive web design:** ![High][high_img] All pages were tested at the following breakpoints: 320px, 768px, 1024px (can be more / different according to your analytics).
+* [ ] **Responsive web design:** ![High][high_img] Tüm sayfalar 320px, 768px, 1024px (Analitik verilerinize göre daha farklı olabilir) kırılma noktaları için test edilmelidir.
 
-* [ ] **CSS Validator:** ![Medium][medium_img] The CSS was tested and pertinent errors were corrected.
+* [ ] **CSS Validator:** ![Medium][medium_img] CSS test edilmeli ve bilinen hatalar düzeltilmeli.
 
 > * 🛠 [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-* [ ] **Desktop Browsers:** ![High][high_img] All pages were tested on all current desktop browsers (Safari, Firefox, Chrome, Internet Explorer, EDGE...).
-* [ ] **Mobile Browsers:**  ![High][high_img] All pages were tested on all current mobile browsers (Native browser, Chrome, Safari...).
-* [ ] **OS:**  ![High][high_img] All pages were tested on all current OS (Windows, Android, iOS, Mac...).
+* [ ] **Desktop Browsers:** ![High][high_img] Tüm sayfalar bilinen tüm masaüstü tarayıcılarda test edilmeli (Safari, Firefox, Chrome, Internet Explorer, EDGE...).
+* [ ] **Mobile Browsers:**  ![High][high_img] Tüm sayfalar bilinen tüm mobil tarayıcılarda test edilmeli (Native browser, Chrome, Safari...).
+* [ ] **OS:**  ![High][high_img] Tüm sayfalar bilinen tüm işletim sistemlerinde test edilmeli (Windows, Android, iOS, Mac...).
 
-- [ ] **Pixel perfect:** ![High][high_img] Pages are close to pixel perfect. Depending on the quality of the creatives, you may not be 100% accurate, but your page needs to be close to your template.
+- [ ] **Pixel perfect:** ![High][high_img] Sayfanız hazırlanan tasarımla %100 aynı olmasada buna oldukça yakın olmalı.
 
 > [Pixel Perfect - Chrome Extension](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=en)
 
-* [ ] **Reading direction:** ![High][high_img] All pages need to be tested for LTR and RTL languages if they need to be supported.
+* [ ] **Reading direction:** ![High][high_img] Eğer desteklenecekse tüm sayfalar LTR ve RTL diller için test edilmeli.
 
 > * 📖 [Building RTL-Aware Web Apps & Websites: Part 1 - Mozilla Hacks](https://hacks.mozilla.org/2015/09/building-rtl-aware-web-apps-and-websites-part-1/)
 > * 📖 [Building RTL-Aware Web Apps & Websites: Part 2 - Mozilla Hacks](https://hacks.mozilla.org/2015/10/building-rtl-aware-web-apps-websites-part-2/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ başa dön](#table-of-contents)**
 
 ---
 
-## Images
+## Görseller
 
-> **Notes:** For a complete understanding of image optimization, check the free ebook **[Essential Image Optimization](https://images.guide/)** from Addy Osmani.
+> **Notlar:** Resim optimizasyonunu hakkında detaylı bilgi için ücretsiz ekitap'dan faydalanın. **[Essential Image Optimization](https://images.guide/)** from Addy Osmani.
 
-### Best practices
+### En iyi teknikler
 
-* [ ] **Optimization:** ![High][high_img] All images are optimized to be rendered in the browser. WebP format could be used for critical pages (like Homepage).
+* [ ] **Optimization:** ![High][high_img] Tüm görseller tarayıcıda kullanılmadan önce optimize edilmelidir. Anasayfa gibi önemli sayfalarda WebP formatını kullanabilirsiniz.
 
 > * 🛠 [Imagemin](https://github.com/imagemin/imagemin)
-> * 🛠 Use [ImageOptim](https://imageoptim.com/) to optimise your images for free.
-> * 🛠 Use [Kraken.io](https://kraken.io/web-interface) awesome alternative for both png and jpg optimization. Up to 1mb per files on free plan.
+> * 🛠 [ImageOptim](https://imageoptim.com/) ile resimlerinizi ücretsiz şekilde optimize edebilirsiniz.
+> * 🛠 [Kraken.io](https://kraken.io/web-interface) da png ve jpg optimizasyonu için başarılı çözümler bulabilirsiniz. 1mb'a kadar olan dosyalar ücretsiz plana dahil.
 
-* [ ] **Picture/Srcset:** ![Medium][medium_img] You use picture/srcset to provide the most appropriate image for the current viewport of the user.
+* [ ] **Picture/Srcset:** ![Medium][medium_img] Kullanıcının ekran boyutuna göre en uygun resmin görüntülenmesi için srcset özelliği kullanılmalıdır.
 
-> * 📖 [How to Build Responsive Images with srcset](https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/)
+> * 📖 [Srcset ile responsive görseller hazırlama](https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/)
 
-* [ ] **Retina:** ![Low][low_img] You provide layout images 2x or 3x, support retina display.
-* [ ] **Sprite:** ![Medium][medium_img] Small images are in a sprite file (in the case of icons, they can be in an SVG sprite image).
-* [ ] **Width and Height:** ![High][high_img] Set `width` and `height` attributes on `<img>` if the final rendered image size is known (can be omitted for CSS sizing).
-* [ ] **Alternative text:** ![High][high_img] All `<img>` have an alternative text which describe the image visually.
+* [ ] **Retina:** ![Low][low_img] Retina desteği için görsellerin 2x ve 3x formatları bulunmalıdır.
+* [ ] **Sprite:** ![Medium][medium_img] Küçük resimler bir sprite dosyasında yer almalıdır (ikonlar SVG sprite dosyalarında bulunabilir).
+* [ ] **Width and Height:** ![High][high_img] Eğer render edilecek görselin boyutları biliniyorsa `<img>` elementlerinin `width` ve `height`değerleri girilmelidir (CSS üzerinden boyutlandırmalarda kullanılmayabilir).
+* [ ] **Alternative text:** ![High][high_img] Tüm `<img>` elementleri görseli açıklayan bir yazı barındırmalıdır.
 
 > * 📖 [Alt-texts: The Ultimate Guide](https://axesslab.com/alt-texts/)
 
