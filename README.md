@@ -396,47 +396,47 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 > * 📖 [Alt-texts: The Ultimate Guide](https://axesslab.com/alt-texts/)
 
-* [ ] **Lazy loading:** ![Medium][medium_img] Images are lazyloaded (A noscript fallback is always provided).
+* [ ] **Lazy loading:** ![Medium][medium_img] Resimler lazyload ile yüklenmeli. (Daima bir noscript alternatifi bulunmalı).
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ başa dön](#table-of-contents)**
 
 ---
 
 ## JavaScript
 
-### Best practices
+### En iyi teknikler
 
-* [ ] **JavaScript Inline:** ![High][high_img] You don't have any JavaScript code inline (mixed with your HTML code).
-* [ ] **Concatenation:** ![High][high_img] JavaScript files are concatenated.
-* [ ] **Minification:** ![High][high_img] JavaScript files are minified (you can add the `.min` suffix).
+* [ ] **JavaScript Inline:** ![High][high_img] Javascript kodlar döküman içinde kullanılmamalı (HTML kodu ile karışık şekilde).
+* [ ] **Concatenation:** ![High][high_img] Javascript dosyaları birleştirilmeli.
+* [ ] **Minification:** ![High][high_img] JavaScript dosyaları sıkıştırılmalı (`.min` soneki kullanılabilir).
 
-> * 📖 [Minify Resources (HTML, CSS, and JavaScript)](https://developers.google.com/speed/docs/insights/MinifyResources)
+> * 📖 [İçerikleri Sıkıştırmak (HTML, CSS, and JavaScript)](https://developers.google.com/speed/docs/insights/MinifyResources)
 
 * [ ] **JavaScript security:**
 
-> * 📖 [Guidelines for Developing Secure Applications Utilizing JavaScript](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet#Guidelines_for_Developing_Secure_Applications_Utilizing_JavaScript)
+> * 📖 [JavaScript'i Kullanan Güvenli Uygulamalar Geliştirme Rehberi](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet#Guidelines_for_Developing_Secure_Applications_Utilizing_JavaScript)
 
-* [ ] **Non-blocking:** ![Medium][medium_img] JavaScript files are loaded asynchronously using `async` or deferred using `defer` attribute.
+* [ ] **Non-blocking:** ![Medium][medium_img] JavaScript dosyaları asenkron(`async`) ya da defer(`defer`) ile yüklenmeli.
 
-> * 📖 [Remove Render-Blocking JavaScript](https://developers.google.com/speed/docs/insights/BlockingJS)
+> * 📖 [Oluşturmayı Önleyici Javascript'i Kaldırma](https://developers.google.com/speed/docs/insights/BlockingJS)
 
-* [ ] **Modernizr:** ![Low][low_img] If you need to target some specific features you can use a custom Modernizr to add classes in your `<html>` tag.
+* [ ] **Modernizr:** ![Low][low_img] Bazı özel nitelikleri hedeflemeniz gerekiyorsa, `<html>` etiketinize sınıf eklemek için özel bir Modernizr kullanabilirsiniz.
 
-> * 🛠 [Customize your Modernizr](https://modernizr.com/download?setclasses)
+> * 🛠 [Modernizr'ınızi Kişiselleştirin](https://modernizr.com/download?setclasses)
 
 ### JavaScript testing
 
-* [ ] **ESLint:** ![High][high_img] No errors are flagged by ESLint (based on your configuration or standards rules).
+* [ ] **ESLint:** ![High][high_img] ESLint ile herhangi bir hata almamalısınız (Standart kurallara ya da kendi ayarlarınıza göre).
 
-> * 📖 [ESLint - The pluggable linting utility for JavaScript and JSX](https://eslint.org/)
+> * 📖 [ESLint - JavaScript ve JSX için modüler linting asistanı](https://eslint.org/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ başa dön](#table-of-contents)**
 
 ---
 
-## Security
+## Güvenlik
 
-### Scan and check your web site
+### Web sitenizi tarayın ve kontrol edin
 
 > * [securityheaders.io](https://securityheaders.io/)
 > * [Observatory by Mozilla](https://observatory.mozilla.org/)
@@ -444,61 +444,61 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 ### Best practices
 
-* [ ] **HTTPS:** ![Medium][medium_img] HTTPS is used on every pages and for all external content (plugins, images...).
+* [ ] **HTTPS:** ![Medium][medium_img] Tüm sayfalar ve harici içeriklerde HTTPS kullanılmalı (eklentiler, resimler...).
 
 > * 🛠 [Let's Encrypt - Free SSL/TLS Certificates](https://letsencrypt.org/)
 > * 🛠 [Free SSL Server Test](https://www.ssllabs.com/ssltest/index.html)
 > * 📖 [Strict Transport Security](http://caniuse.com/#feat=stricttransportsecurity)
 
-* [ ] **HTTP Strict Transport Security (HSTS):** ![Medium][medium_img] The HTTP header is set to 'Strict-Transport-Security'.
+* [ ] **HTTP Katı Taşıma Güvenliği (HSTS):** ![Medium][medium_img] HTTP header'ı 'Strict-Transport-Security' şeklinde ayarlanmalı.
 
 > * 🛠 [Check HSTS preload status and eligibility](https://hstspreload.org/)
 > * 📖 [HTTP Strict Transport Security Cheat Sheet - OWASP](https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet)
 > * 📖 [Transport Layer Protection Cheat Sheet - OWASP](https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet)
 
-* [ ] **Cross Site Request Forgery (CSRF):** ![High][high_img] You ensure that requests made to your server-side are legitimate and originate from your website / app to prevent CSRF attacks.
+* [ ] **Siteler Arası İstek Sahteciliği (CSRF):** ![High][high_img] CSRF saldırılarını önlemek ve sunucuya yapılan isteklerin doğruluğu için gelen isteklerin web sitenizden / uygulamanızdan geldiğine emin olun.
 
 > * 📖 [Cross-Site Request Forgery (CSRF) Prevention Cheat Sheet  - OWASP](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet)
 
-* [ ] **Cross Site Scripting (XSS):** ![High][high_img] Your page or website is free from XSS possible issues.
+* [ ] **Cross Site Scripting (XSS):** ![High][high_img] Sayfanız veya web siteniz, olası XSS sorunları içermemeli.
 
 > * 📖 [XSS (Cross Site Scripting) Prevention Cheat Sheet  - OWASP](https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet)
 > * 📖 [DOM based XSS Prevention Cheat Sheet  - OWASP](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet)
 
-* [ ] **Content Type Options** ![Medium][medium_img] Prevents Google Chrome and Internet Explorer from trying to mime-sniff the content-type of a response away from the one being declared by the server.
+* [ ] **Content Type Options** ![Medium][medium_img] Google Chrome ve Internet Explorer'ın bir yanıtın içerik türünü sunucu tarafından bildirilenlerden farklı olarak algılamasını(mime-sniff) önler.
 
 > * 📖 [X-Content-Type-Options - Scott Helme](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-content-type-options)
 
-* [ ] **X-Frame-Options (XFO)** ![Medium][medium_img] Protects your visitors against clickjacking attacks.
+* [ ] **X-Frame-Options (XFO)** ![Medium][medium_img] Ziyaretçilerinizi tıklama saldırılarına karşı koruyun.
 
 > * 📖 [X-Frame-Options - Scott Helme](https://scotthelme.co.uk/hardening-your-http-response-headers/#x-frame-options)
 > * 📖 [RFC7034 - HTTP Header Field X-Frame-Options](https://tools.ietf.org/html/rfc7034)
 
-* [ ] **Content Security Policy** ![Medium][medium_img] Defines how content is loaded on your site and from where it is permitted to be loaded. Can also be used to protect against clickjacking attacks.
+* [ ] **Content Security Policy** ![Medium][medium_img] İçeriğin sitenizde nasıl yüklendiğini ve nerede yüklenmesine izin verdiğini tanımlar. Ayrıca tıklama saldırılarına karşı koruma sağlamak için de kullanılabilir.
 
 > * 📖 [Content Security Policy - An Introduction - Scott Helme](https://scotthelme.co.uk/content-security-policy-an-introduction/)
 > * 📖 [CSP Cheat Sheet - Scott Helme](https://scotthelme.co.uk/csp-cheat-sheet/)
 > * 📖 [CSP Cheat Sheet - OWASP](https://www.owasp.org/index.php/Content_Security_Policy_Cheat_Sheet)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ başa dön](#table-of-contents)**
 
 ---
 
-## Performance
+## Performans
 
 ### Best practices
 
-- [ ] **Page weight:** ![High][high_img] The weight of each page is between 0 and 500 KB.
+- [ ] **Page weight:** ![High][high_img] Sayfa boyutları 0 ile 500 KB arasında olmalı.
 
 > * 🛠 [Website Page Analysis](https://tools.pingdom.com)
 > * 📖 [Size Limit: Make the Web lighter](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
 
-- [ ] **Minified:** ![Medium][medium_img] Your HTML is minified.
+- [ ] **Minified:** ![Medium][medium_img] HTML'i sıkıştırmalısınız.
 > * 🛠 [W3C Validator](https://validator.w3.org/)
 
-* [ ] **Lazy loading:** ![Medium][medium_img] Images, scripts and CSS need to be lazy loaded to improve the response time of the current page (See details in their respective sections).
+* [ ] **Lazy loading:** ![Medium][medium_img] Resim, script ve CSS dosyaları sayfa yanıt süresini iyileştirmek için lazyload ile yüklenmeli (Detaylı bilgiye kendi başlıkları altından ulaşılabilir).
 
-* [ ] **Cookie size:** If you are using cookies be sure each cookie doesn't exceed 4096 bytes and your domain name doesn't have more than 20 cookies.
+* [ ] **Cookie size:** Eğer çerez kullanıyorsanız, her bir çerezin 4096 bayttan fazla olmadığına ve alan adınızın 20'den fazla çerez içermediğine emin olun.
 
 > * 📖 [Cookie specification: RFC 6265](https://tools.ietf.org/html/rfc6265)
 > * 📖 [Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
@@ -633,9 +633,9 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 ---
 
-## Translation
+## Çeviri
 
-The Front-End Checklist is also available in other languages. Thanks for all translators and their awesome work!
+Front-End Checklist diğer dillerde de mevcuttur. Tüm çevirmenlerlere teşekkürler!
 
 * 🇯🇵 Japanese: [miya0001/Front-End-Checklist](https://github.com/miya0001/Front-End-Checklist)
 * 🇪🇸 Spanish: [eoasakura/Front-End-Checklist-ES](https://github.com/eoasakura/Front-End-Checklist-ES)
@@ -648,9 +648,9 @@ The Front-End Checklist is also available in other languages. Thanks for all tra
 
 ---
 
-## Front-End Checklist Badge
+## Front-End Checklist Rozeti
 
-If you want to show you are following the rules of the Front-End Checklist, put this badge on your README file!
+Front-End Checklist Listesinin kurallarını izlediğinizi göstermek isterseniz bu rozeti Benioku dosyasında kullanabilirsiniz.
 
 ➔ [![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
 
@@ -658,13 +658,13 @@ If you want to show you are following the rules of the Front-End Checklist, put 
 [![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ başa dön](#table-of-contents)**
 
 ---
 
-## Contributing
+## Katkıda Bulunma
 
-**Open an issue or a pull request to suggest changes or additions.**
+**Değişiklikler veya eklemeler önermek için issue açabilir veya pull sorgusu gönderebilirsiniz.**
 
 ### Guide
 
@@ -678,27 +678,31 @@ This branch consists of the `README.md` file that is automatically reflected on 
 
 This branch will be used to make some significant changes to the structure, content if needed. It is preferable to use the master branch to fix small errors or add a new item.
 
-### Contributors
+### Katkıda Bulunanlar
 
-Check out all the super awesome [contributors](https://github.com/thedaviddias/frontendchecklist/graphs/contributors).
+Katkıda bulunanları [buradan](https://github.com/thedaviddias/frontendchecklist/graphs/contributors) görüntüleyebilirsiniz.
 
-## Support
+## Destek
 
-If you have any question or suggestion, don't hesitate to use Gitter or Twitter:
+Herhangi bir sorunuz veya öneriniz varsa, Gitter veya Twitter'ı kullanmaktan çekinmeyin:
 
-* [Chat on Gitter](https://gitter.im/Front-End-Checklist/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
+* [Gitter](https://gitter.im/Front-End-Checklist/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 * [Facebook](https://www.facebook.com/frontendchecklist/)
 * [Twitter](https://twitter.com/thedaviddias)
 
-## Authors
+## Yazar
 
 **[David Dias](https://github.com/thedaviddias/Front-End-Checklist)**
 
-## License
+## Çevirmen
+
+**[Eray Çetinay](https://github.com/eraycetinay/Front-End-Checklist)**
+
+## Lisans
 
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ başa dön](#table-of-contents)**
 
 [low_img]: http://res.cloudinary.com/djnyaloac/image/upload/v1508238836/level-checklist-low.png
 [medium_img]: http://res.cloudinary.com/djnyaloac/image/upload/v1508238836/level-checklist-medium.png
