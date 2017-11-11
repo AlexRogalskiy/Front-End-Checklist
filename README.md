@@ -538,7 +538,7 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 > * 📖 [Difference between prefetch and preload](https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf)
 
-### Performance testing
+### Performans Testleri
 
 * [ ] **Google PageSpeed:** ![High][high_img] All your pages were tested (not only the homepage) and have a score of at least 90/100.
 
@@ -547,7 +547,7 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 > * 🛠 [WebPagetest - Website Performance and Optimization Test](https://www.webpagetest.org/)
 > * 🛠 [GTmetrix - Website speed and performance optimization](https://gtmetrix.com/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ başa dön](#table-of-contents)**
 
 ---
 
@@ -557,18 +557,18 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 ### Best practices
 
-- [ ] **Progressive enhancement:** ![Medium][medium_img] Major functionality like main navigation and search should work without JavaScript enabled.
+- [ ] **Progressive enhancement:** ![Medium][medium_img] Navigasyon ve arama gibi sayfanın önemli işlevleri Javascript etkin olmadan da kullanılabilmeli.
 
 > * 📖 [Enable / Disable JavaScript in Chrome Developer Tools](https://www.youtube.com/watch?v=kBmvq2cE0D8)
 
-- [ ] **Color contrast:** ![Medium][medium_img] Color contrast should at least pass WCAG AA (AAA for mobile).
+- [ ] **Renk kontrastı:** ![Medium][medium_img] Renk kontrastı en azından WCAG AA(Mobil için AAA)'yı geçmelidir 
 
 > * 🛠 [Contrast ratio](https://leaverou.github.io/contrast-ratio/)
 
-#### Headings
+#### Başlık Etiketleri
 
-* [ ] **H1:** ![High][high_img] All pages have an H1 which is not the title of the website.
-* [ ] **Headings:** ![High][high_img] Headings should be used properly in the right order (H1 to H6).
+* [ ] **H1:** ![High][high_img] Her sayfa sayfa başlığından farklı bir H1 içermeli.
+* [ ] **Headings:** ![High][high_img] Başlık etiketleri doğru sırada kullanılmalı (H1'den H6'ya).
 
 > * 📹 [Why headings and landmarks are so important -- A11ycasts #18](https://www.youtube.com/watch?v=vAAzdi1xuUY&index=9&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 
@@ -581,26 +581,26 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 > * 📖 [Using ARIA landmarks to identify regions of a page](https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page)
 > * 📖 [ARIA roles categorization](https://www.w3.org/TR/wai-aria/roles#roles_categorization)
 
-### Semantics
+### Semantikler
 
-- [ ] **Specific HTML5 input types are used:** ![Medium][medium_img] This is especially important for mobile devices that show customized keypads and widgets for different types.
+- [ ] **Specific HTML5 input types are used:** ![Medium][medium_img] Özelleştirilmiş tuş takımları ve farklı türdeki araçlar kullanan mobil cihazlar için önem arz eder.
 
 > * 📖 [Mobile Input Types](http://mobileinputtypes.com/)
 
 ### Form
 
-* [ ] **Label:** ![High][high_img] A label is associated with each input form element. In case a label can't be displayed, use `aria-label` instead.
+* [ ] **Label:** ![High][high_img] Her input öğesi bir label öğesi ilse ilişkilendirildi. Label'in görüntülenemediği durumlar için `aria-label` kullanılmalı.
 
 > * 📖 [Using the aria-label attribute - MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute)
 
-### Accessibility testing
+### Erişilebilirlik testleri
 
-* [ ] **Accessibility standards testing:** ![High][high_img] Use the WAVE tool to test if your page respects the accessibility standards.
+* [ ] **Accessibility standards testing:** ![High][high_img] Sayfanızın erişilebilirlik standartlarına uyup uymadığını test etmek için WAVE aracını kullanın.
 
-> * 🛠 [Wave testing](http://wave.webaim.org/)
+> * 🛠 [Wave Testi](http://wave.webaim.org/)
 
-* [ ] **Keyboard navigation:** ![High][high_img] Test your website using only your keyboard in a previsible order. All interactive elements are reachable and usable.
-* [ ] **Screen-reader:** ![Medium][medium_img] All pages were tested in a screen-reader (VoiceOver, ChromeVox, NVDA or Lynx).
+* [ ] **Keyboard navigation:** ![High][high_img] Web sitenizi klavyenizi kullanarak test edin. Tüm etkileşimli öğeler, erişilebilir ve kullanılabilir olmalı.
+* [ ] **Screen-reader:** ![Medium][medium_img] Tüm sayfalar ekran okuyucuda test edildi (VoiceOver, ChromeVox, NVDA ve Lynx).
 * [ ] **Focus style:** ![High][high_img] If the focus is disabled, it is replaced by visible state in CSS.
 
 > * 📹 [Managing Focus - A11ycasts #22](https://www.youtube.com/watch?v=srLRSQg6Jgg&index=5&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
@@ -611,25 +611,25 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 ## SEO
 
-* [ ] **Google Analytics:** ![High][high_img] Google Analytics is installed and correctly configured.
-* [ ] **Headings logic:** ![Medium][medium_img] Heading text helps to understand the content in the current page.
-* [ ] **sitemap.xml:** ![High][high_img] A sitemap.xml exists and was submitted to Google Search Console (previously Google Webmaster Tools).
-* [ ] **robots.txt:** ![High][high_img] The robots.txt is not blocking webpages.
+* [ ] **Google Analytics:** ![High][high_img] Google Analytics kurulmalı ve doğru şekilde yapılandırılmalı.
+* [ ] **Headings logic:** ![Medium][medium_img] Başlık metni daima geçerli sayfadaki içeriğin anlaşılmasına yardımcı olmalı.
+* [ ] **sitemap.xml:** ![High][high_img] Bir sitemap.xml bulunmalı ve Google Search Console'a (eski adıyla Google Webmaster Araçları) gönderilmeli.
+* [ ] **robots.txt:** ![High][high_img] robots.txt sayfaları engellememeli.
 
-> * 🛠 Test your robots.txt with [Google Robots Testing Tool](https://www.google.com/webmasters/tools/robots-testing-tool)
+> * 🛠 [Google Robots Test Aracı](https://www.google.com/webmasters/tools/robots-testing-tool) ile robots.txt'i test edin.
 
-* [ ] **Structured Data:** ![High][high_img] Pages using structured data are tested and are without errors. Structured data helps crawlers understand the content in the current page.
+* [ ] **Structured Data:** ![High][high_img] Yapısal verileri kullanan sayfalar test edilmeli ve hata içermemeli. Yapılandırılmış veriler, örümceklerin geçerli sayfadaki içeriği anlamalarına yardımcı olur.
 
-> * 📖 [Introduction to Structured Data - Search - Google Developers](https://developers.google.com/search/docs/guides/intro-structured-data)
-> * 🛠 Test your page with the [Structured Data Testing Tool](https://developers.google.com/structured-data/testing-tool/)
-> * 🛠 Complete list of vocabularies that can be used as structured data. [Schema.org Full Heirarchy](http://schema.org/docs/full.html)
+> * 📖 [Yapılandırılmış Verilere Giriş - Search - Google Developers](https://developers.google.com/search/docs/guides/intro-structured-data)
+> * 🛠 [Yapısal Veri Test Aracı](https://developers.google.com/structured-data/testing-tool/) ile sayfanızı test edin.
+> * 🛠 Yapısal veriler olarak kullanılabilecek tüm sözlüklerin listesi. [Schema.org Tam Hiyerarşi](http://schema.org/docs/full.html)
 
-* [ ] **Sitemap HTML:** ![Medium][medium_img] An HTML sitemap is provided and is accessible via a link in the footer of your website.
+* [ ] **Sitemap HTML:** ![Medium][medium_img] HTML sitemap'iniz bulunmalı ve sitenizin footer'ından bir link aracılığı ile ulaşılır olmalı.
 
-> * 📖 [Sitemap guidelines - Google Support](https://support.google.com/webmasters/answer/183668?hl=en)
-> * 🛠 [Sitemap generator](https://websiteseochecker.com/html-sitemap-generator/)
+> * 📖 [Sitemap yönergeleri - Google Support](https://support.google.com/webmasters/answer/183668?hl=en)
+> * 🛠 [Sitemap Oluşturucu](https://websiteseochecker.com/html-sitemap-generator/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ başa dön](#table-of-contents)**
 
 ---
 
