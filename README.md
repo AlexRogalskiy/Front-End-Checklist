@@ -498,39 +498,39 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 * [ ] **Lazy loading:** ![Medium][medium_img] Resim, script ve CSS dosyaları sayfa yanıt süresini iyileştirmek için lazyload ile yüklenmeli (Detaylı bilgiye kendi başlıkları altından ulaşılabilir).
 
-* [ ] **Cookie size:** Eğer çerez kullanıyorsanız, her bir çerezin 4096 bayttan fazla olmadığına ve alan adınızın 20'den fazla çerez içermediğine emin olun.
+* [ ] **Cookie boyutu:** Eğer çerez kullanıyorsanız, her bir çerezin 4096 bayttan fazla olmadığına ve alan adınızın 20'den fazla çerez içermediğine emin olun.
 
 > * 📖 [Cookie specification: RFC 6265](https://tools.ietf.org/html/rfc6265)
 > * 📖 [Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
 > * 🛠 [Browser Cookie Limits](http://browsercookielimits.squawky.net/)
 
-* [ ] **Third party components:** ![Medium][medium_img] Third party iframes or components relying on external JS (like sharing buttons) are replaced by static components when possible, thus limiting calls to external APIs and keeping your users activity private.
+* [ ] **Üncü parti bileşenler:** ![Medium][medium_img] Third party iframes or components relying on external JS (like sharing buttons) are replaced by static components when possible, thus limiting calls to external APIs and keeping your users activity private.
 
 > * 🛠 [Simple sharing buttons generator](https://simplesharingbuttons.com/)
 
-### Preparing upcoming requests
+### Yaklaşan istekleri hazırlama
 
 > * 📖 [Explanation of the following techniques](https://css-tricks.com/prefetching-preloading-prebrowsing/)
 
-* [ ] **DNS resolution:** ![Low][low_img] DNS of third-party services that may be needed are resolved in advance during idle time using `dns-prefetch`.
+* [ ] **DNS resolution:** ![Low][low_img] Gerekli olabilecek üçüncü parti servislerin DNS'leri, boşta kalma süresi boyunca `dns-prefetch` ile çözümlenir.
 
 ```html
 <link rel="dns-prefetch" href="https://example.com">
 ```
 
-* [ ] **Preconnection:** ![Low][low_img] DNS lookup, TCP handshake and TLS negotiation with services that will be needed soon is done in advance during idle time using `preconnect`.
+* [ ] **Preconnection:** ![Low][low_img] DNS lookup, TCP handshake ve servislerin TLS negotiation aşamaları için `preconnect` kullanıldı.
 
 ```html
 <link rel="preconnect" href="https://example.com">
 ```
 
-* [ ] **Prefetching:** ![Low][low_img] Resources that will be needed soon (e.g. lazy loaded images) are requested in advance during idle time using `prefetch`.
+* [ ] **Prefetching:** ![Low][low_img] İhtiyaç duyulacak kaynaklar (örn. lazyload resimler), yükleme esnasında `prefetch` ile getirildi.
 
 ```html
 <link rel="prefetch" href="image.png">
 ```
 
-* [ ] **Preloading:** ![Low][low_img] Resources needed in the current page (e.g. scripts placed at the end of `<body>`) in advance using `preload`.
+* [ ] **Preloading:** ![Low][low_img] Geçerli sayfada gerekli olan kaynaklar (örneğin, `<body>` sonuna yerleştirilen scriptler) 'preload' ile işlendi.
 
 ```html
 <link rel="preload" href="app.js">
@@ -540,7 +540,7 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 ### Performans Testleri
 
-* [ ] **Google PageSpeed:** ![High][high_img] All your pages were tested (not only the homepage) and have a score of at least 90/100.
+* [ ] **Google PageSpeed:** ![High][high_img] TÜm sayfalar test edildi ve her biri en azından 100 üzerinden 90 puan alıyor.
 
 > * 🛠 [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/)
 > * 🛠 [Test your mobile speed with Google](https://testmysite.withgoogle.com)
@@ -551,11 +551,11 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 ---
 
-## Accessibility
+## Ulaşılabilirlik
 
-> **Notes:** You can watch the playlist [A11ycasts with Rob Dodson](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g) 📹
+> **Notes:** Oynatma Listesi için: [A11ycasts with Rob Dodson](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g) 📹
 
-### Best practices
+### En iyi teknikler
 
 - [ ] **Progressive enhancement:** ![Medium][medium_img] Navigasyon ve arama gibi sayfanın önemli işlevleri Javascript etkin olmadan da kullanılabilmeli.
 
@@ -601,7 +601,7 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 * [ ] **Keyboard navigation:** ![High][high_img] Web sitenizi klavyenizi kullanarak test edin. Tüm etkileşimli öğeler, erişilebilir ve kullanılabilir olmalı.
 * [ ] **Screen-reader:** ![Medium][medium_img] Tüm sayfalar ekran okuyucuda test edildi (VoiceOver, ChromeVox, NVDA ve Lynx).
-* [ ] **Focus style:** ![High][high_img] If the focus is disabled, it is replaced by visible state in CSS.
+* [ ] **Focus style:** ![High][high_img] Odak devre dışıysa, CSS'ile aktif hale getirildi.
 
 > * 📹 [Managing Focus - A11ycasts #22](https://www.youtube.com/watch?v=srLRSQg6Jgg&index=5&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 
@@ -668,15 +668,15 @@ Front-End Checklist Listesinin kurallarını izlediğinizi göstermek isterseniz
 
 ### Guide
 
-The **Front-End Checklist** repository consists of two branches:
+**Front-End Checklist** iki alt daldan oluşur:
 
 #### 1. `master`
 
-This branch consists of the `README.md` file that is automatically reflected on the [Front-End Checklist](http://frontendchecklist.com/) website.
+Bu dal otomatik olarak [Front-End Checklist](http://frontendchecklist.com/) 'e yansıtılan' README.md 'dosyasından oluşur. 
 
 #### 2. `develop`
 
-This branch will be used to make some significant changes to the structure, content if needed. It is preferable to use the master branch to fix small errors or add a new item.
+Bu dal, içeriğe gerektiği takdirde önemli değişiklikler yapmak için kullanılacaktır. Küçük hataları düzeltmek veya yeni bir madde eklemek için ana dalın kullanılması tercih edilir.
 
 ### Katkıda Bulunanlar
 
@@ -693,10 +693,6 @@ Herhangi bir sorunuz veya öneriniz varsa, Gitter veya Twitter'ı kullanmaktan �
 ## Yazar
 
 **[David Dias](https://github.com/thedaviddias/Front-End-Checklist)**
-
-## Çevirmen
-
-**[Eray Çetinay](https://github.com/eraycetinay/Front-End-Checklist)**
 
 ## Lisans
 
