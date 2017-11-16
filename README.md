@@ -605,7 +605,7 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 > * 📹 [Managing Focus - A11ycasts #22](https://www.youtube.com/watch?v=srLRSQg6Jgg&index=5&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ başa dön](#İçindekiler)**
 
 ---
 
