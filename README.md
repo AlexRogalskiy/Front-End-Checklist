@@ -46,9 +46,9 @@ Bazı kaynaklar içeriğin türünü anlayabilmeniz için çeşitli ifadeler iç
 
 ## Head
 
-> **Notlar:** HTML dökümanının `<head>` bölümünde bulunması gereken elementlerin tam listesini [burada](https://github.com/mkg0/HEAD) bulabilirsiniz.
+> **Not:** HTML dökümanının `<head>` bölümünde bulunması gereken elementlerin tam listesini türkçe açıklamaları ile [burada](https://github.com/mkg0/HEAD) bulabilirsiniz. 
 
-### Meta tag
+### Meta etiketler
 
 * [ ] **Doctype:** ![High][high_img] Doctype, HTML5'dir ve tüm HTML sayfalarınızın en üstünde yer almalıdır.
 
@@ -134,7 +134,7 @@ Bazı kaynaklar içeriğin türünü anlayabilmeniz için çeşitli ifadeler iç
 <meta name="msapplication-config" content="browserconfig.xml" />
 ```
 
-Browserconfig.xml dosyası için gerekli minimum xml işaretlemesi aşağıdaki gibidir:
+Browserconfig.xml dosyası için gerekli minimum xml betiği aşağıdaki gibidir:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -152,7 +152,7 @@ Browserconfig.xml dosyası için gerekli minimum xml işaretlemesi aşağıdaki 
 
 > * 📖 [Tarayıcı yapılandırmaları için şema referansı](https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx)
 
-* [ ] **Canonical:** ![Medium][medium_img] Yinelenen içeriği önlemek için `rel =" canonical "` kullanın.
+* [ ] **Canonical:** ![Medium][medium_img] Yinelenen içeriği önlemek için `rel="canonical"` kullanın.
 
 ```html
 <!-- Yinelenen içerik sorunlarını önlemeye yardımcı olur -->
@@ -162,7 +162,7 @@ Browserconfig.xml dosyası için gerekli minimum xml işaretlemesi aşağıdaki 
 > * 📖 [Kanonik URL'leri kullanın - Search Console Yardım - Google Support](https://support.google.com/webmasters/answer/139066?hl=en)
 > * 📖 [rel=canonical ile ilgili sıkça yapılan yapılan 5 hata - Google Webmaster Blog](https://webmasters.googleblog.com/2013/04/5-common-mistakes-with-relcanonical.html)
 
-### HTML tags
+### HTML etiketleri
 
 * [ ] **Language attribute:** ![High][high_img] Web sitenizde `lang` niteliğini kullanmalı ve geçerli sayfanın dili ile ilişkilendirmelisiniz.
 
@@ -190,19 +190,18 @@ Browserconfig.xml dosyası için gerekli minimum xml işaretlemesi aşağıdaki 
 
 * [ ] **RSS feed:** ![Low][low_img] Eğer projeniz bir blog ise ya da makaleler içeriyor ise; bir RSS link sağlanmalıdır.
 
-* [ ] **Inline critical CSS:** ![Medium][medium_img] CSS which styles content that is immediately visible during pageload ("above the fold content") is called "critical CSS". It is embedded before your principal CSS call and between `<style></style>` in a single line (minified).
-Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi gereken CSS betikleri kritik CSS olarak adlandırılır. Genel CSS içeriklerinden önce `<style></ style>` arasında tek bir satırda (sıkıştırılmış) verilmelidir.
+* [ ] **Inline critical CSS:** ![Medium][medium_img] Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi gereken CSS betikleri kritik CSS olarak adlandırılır. Genel CSS içeriklerinden önce `<style></ style>` arasında tek bir satırda (sıkıştırılmış) verilmelidir.
 > * 🛠 [Critical, Addy Osmani on GitHub](https://github.com/addyosmani/critical) bu işlemi otomatik hale getirir.
 
 * [ ] **CSS order:** ![High][high_img] Tüm CSS dosyaları JavaScript dosyalarından önce `<head>` bölümünde tanımlanmalıdır. (JS dosyalarının asenkron olarak sayfanın en üstünde yüklenebildiği durumlar dışında).
 
-### Sosyal meta
+### Sosyal meta etiketleri
 
 ***Facebook OG*** ve ***Twitter Cards*** tüm web siteleri için önerilir. Eğer belirli bir sosyal siteyi hedefliyor ve içeriklerinizi tanıtmak istiyorsanız diğer etiketlerde kullanılabilir.
 
 * [ ] **Facebook Open Graph:** ![Low][low_img] Tüm Facebook Open Graph (OG) verileri test edilmeli ve hiçbiri eksik ya da hatalı bilgi içermemelidir. Resimler en az 600 x 315 piksel boyutunda olmalıdır. 1200 x 630 piksel önerilir.
 
-> **Notlar:** `og:image:width` ve `og:image:height` tanımlarını kullanarak resim boyutlarını belirtmeniz; örümceğin asenkron olarak resimleri yükleyip işleme sokmadan, direk kullanabilmesine olanak sağlayacaktır. 
+> **Not:** `og:image:width` ve `og:image:height` tanımlarını kullanarak resim boyutlarını belirtmeniz; örümceğin asenkron olarak resimleri yükleyip işleme sokmadan, direk kullanabilmesine olanak sağlayacaktır. 
 
 ```html
 <meta property="og:type" content="website">
@@ -282,7 +281,7 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 ## Webfonts
 
-> **Notlar:** Webfont kullanımı stillendirilmemiş / görünmez yazılara neden olabilir - may cause Flash Of Unstyled Text/Flash Of Invisible Text - Fallback fontlar kullanmayı ya da webfont yükleyicilerini kullanarak bunu önleyin.
+> **Not:** Webfont kullanımı stillendirilmemiş / görünmez yazılara neden olabilir - may cause Flash Of Unstyled Text/Flash Of Invisible Text - Fallback fontlar kullanmayı ya da webfont yükleyicilerini kullanarak bunu önleyin.
 > * 📖 [Google'ın webfontlar konusunda düşünceleri](https://developers.google.com/fonts/docs/technical_considerations)
 
 * [ ] **Webfont format:** ![High][high_img] WOFF, WOFF2 ve TTF tüm modern tarayıcılar tarafından desteklenir.
@@ -304,7 +303,7 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 ## CSS
 
-> **Notlar:** Çoğu Front-End geliştiricinin takip ettiği [CSS Kılavuzları](https://cssguidelin.es/) ve [Sass Kılavuzları](https://sass-guidelin.es/)nı inceleyin. Eğer CSS özellikleri konusunda çekinceleriniz var ise, [CSS Kaynakça](http://cssreference.io/)sını ziyaret edin. Tutarlılık için bu kısa [Kod Kılavuzu](http://codeguide.co/) da kullanılabilir.
+> **Not:** Çoğu Front-End geliştiricinin takip ettiği [CSS Kılavuzları](https://cssguidelin.es/) ve [Sass Kılavuzları](https://sass-guidelin.es/)nı inceleyin. Eğer CSS özellikleri konusunda çekinceleriniz var ise, [CSS Kaynakça](http://cssreference.io/)sını ziyaret edin. Tutarlılık için bu kısa [Kod Kılavuzu](http://codeguide.co/) da kullanılabilir.
 
 * [ ] **Responsive Web Design:** ![High][high_img] Web sitesinin tasarımı responsive olmalı.
 * [ ] **CSS Print:** ![Medium][medium_img] Baskı(yazdırma) için tüm sayfalarda geçerli olan bir CSS bulunmalı.
@@ -377,7 +376,7 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 ## Görseller
 
-> **Notlar:** Resim optimizasyonunu hakkında detaylı bilgi için ücretsiz ekitap'dan faydalanın. **[Essential Image Optimization](https://images.guide/)** from Addy Osmani.
+> **Not:** Resim optimizasyonunu hakkında detaylı bilgi için ücretsiz ekitap'dan faydalanın. **[Essential Image Optimization](https://images.guide/)** from Addy Osmani.
 
 ### En iyi teknikler
 
@@ -505,7 +504,7 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 > * 📖 [Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
 > * 🛠 [Browser Cookie Limits](http://browsercookielimits.squawky.net/)
 
-* [ ] **Third party components:** ![Medium][medium_img] Third party iframes or components relying on external JS (like sharing buttons) are replaced by static components when possible, thus limiting calls to external APIs and keeping your users activity private.
+* [ ] **Third party components:** ![Medium][medium_img] Harici JS dosyalarına dayanan 3.parti iframe uygulamaları veya eklentiler mümkün oldukça statik eklentiler ile değiştirilmelidir. Böylece harici api çağrıları limitlenerek ziyaretçi aktiviteleri gizli kalabilir.
 
 > * 🛠 [Simple sharing buttons generator](https://simplesharingbuttons.com/)
 
@@ -554,7 +553,7 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 ## Ulaşılabilirlik
 
-> **Notlar:** Oynatma Listesi için: [A11ycasts with Rob Dodson](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g) 📹
+> **Not:** Oynatma Listesi için: [A11ycasts with Rob Dodson](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g) 📹
 
 ### En iyi teknikler
 
@@ -575,9 +574,9 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 #### Landmarks
 
-- [ ] **Role banner:** ![High][high_img] `<header>` has `role="banner"`.
-- [ ] **Role navigation:** ![High][high_img] `<nav>` has `role="navigation"`.
-- [ ] **Role main:** ![High][high_img] `<main>` has `role="main"`.
+- [ ] **Role banner:** ![High][high_img] `<header>`,  `role="banner"` içeriyor.
+- [ ] **Role navigation:** ![High][high_img] `<nav>`, `role="navigation"` içeriyor.
+- [ ] **Role main:** ![High][high_img] `<main>`, `role="main"` içeriyor.
 
 > * 📖 [Using ARIA landmarks to identify regions of a page](https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page)
 > * 📖 [ARIA roles categorization](https://www.w3.org/TR/wai-aria/roles#roles_categorization)
