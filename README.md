@@ -2,6 +2,7 @@
 
 [![Join the chat at https://gitter.im/Front-End-Checklist/Lobby](https://badges.gitter.im/Front-End-Checklist/Lobby.svg)](https://gitter.im/Front-End-Checklist/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
+[![Backers on Open Collective](https://opencollective.com/front-end-checklist/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/front-end-checklist/sponsors/badge.svg)](#sponsors)
 [![Contributors](https://img.shields.io/github/contributors/thedaviddias/Front-End-Checklist.svg)](https://github.com/thedaviddias/Front-End-Checklist/graphs/contributors)
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/thedaviddias/front-end-checklist)
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
@@ -10,8 +11,9 @@
 
 Liste, diğer açık kaynaklı listelerden gelen eklemelerle birlikte Front End geliştiricilerinin yıllara dayanan deneyimlerinin bir ürünüdür.
 
-*Front-End Checklist'i daha fazla insanın duymasına yardımcı olmak için Product Hunt üzerinden oy verin.*
-[![](http://res.cloudinary.com/djnyaloac/image/upload/v1508896898/upvote-producthunt_vzys4c.jpg)](https://www.producthunt.com/posts/front-end-checklist)
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/HxqChNNHFKFaMpEpEikk4EM4/thedaviddias/Front-End-Checklist'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/HxqChNNHFKFaMpEpEikk4EM4/thedaviddias/Front-End-Checklist.svg' />
+</a>
 
 ## İçindekiler
 
@@ -412,7 +414,7 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 > * 📖 [İçerikleri Sıkıştırmak (HTML, CSS, and JavaScript)](https://developers.google.com/speed/docs/insights/MinifyResources)
 
-* [ ] **JavaScript security:**
+* [ ] **JavaScript security:** ![High][high_img]
 
 > * 📖 [JavaScript'i Kullanan Güvenli Uygulamalar Geliştirme Rehberi](https://www.owasp.org/index.php/DOM_based_XSS_Prevention_Cheat_Sheet#Guidelines_for_Developing_Secure_Applications_Utilizing_JavaScript)
 
@@ -493,12 +495,11 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 > * 🛠 [Website Page Analysis](https://tools.pingdom.com)
 > * 📖 [Size Limit: Make the Web lighter](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
 
-- [ ] **Minified:** ![Medium][medium_img] HTML'i sıkıştırmalısınız.
-> * 🛠 [W3C Validator](https://validator.w3.org/)
+* [ ] **Minified HTML:** ![Medium][medium_img] HTML'i sıkıştırmalısınız.
 
 * [ ] **Lazy loading:** ![Medium][medium_img] Resim, script ve CSS dosyaları sayfa yanıt süresini iyileştirmek için lazyload ile yüklenmeli (Detaylı bilgiye kendi başlıkları altından ulaşılabilir).
 
-* [ ] **Cookie size:** Eğer çerez kullanıyorsanız, her bir çerezin 4096 bayttan fazla olmadığına ve alan adınızın 20'den fazla çerez içermediğine emin olun.
+* [ ] **Cookie size:** ![Medium][medium_img] Eğer çerez kullanıyorsanız, her bir çerezin 4096 bayttan fazla olmadığına ve alan adınızın 20'den fazla çerez içermediğine emin olun.
 
 > * 📖 [Cookie specification: RFC 6265](https://tools.ietf.org/html/rfc6265)
 > * 📖 [Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
@@ -612,8 +613,19 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 ## SEO
 
 * [ ] **Google Analytics:** ![High][high_img] Google Analytics kurulmalı ve doğru şekilde yapılandırılmalı.
+
+> * 🛠 [Google Analytics](https://analytics.google.com/analytics/web/)
+> * 🛠 [GA Checker (and others)](http://www.gachecker.com/)
+
 * [ ] **Headings logic:** ![Medium][medium_img] Başlık metni daima geçerli sayfadaki içeriğin anlaşılmasına yardımcı olmalı.
+
+> * 🛠 [Tota11y, tab Headings](http://khan.github.io/tota11y/#Try-it)
+
 * [ ] **sitemap.xml:** ![High][high_img] Bir sitemap.xml bulunmalı ve Google Search Console'a (eski adıyla Google Webmaster Araçları) gönderilmeli.
+
+> * 📖 [The robots.txt file](https://varvy.com/robottxt.html)
+> * 🛠 [Sitemap generator](https://websiteseochecker.com/html-sitemap-generator/)
+
 * [ ] **robots.txt:** ![High][high_img] robots.txt sayfaları engellememeli.
 
 > * 🛠 [Google Robots Test Aracı](https://www.google.com/webmasters/tools/robots-testing-tool) ile robots.txt'i test edin.
@@ -621,13 +633,15 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 * [ ] **Structured Data:** ![High][high_img] Yapısal verileri kullanan sayfalar test edilmeli ve hata içermemeli. Yapılandırılmış veriler, örümceklerin geçerli sayfadaki içeriği anlamalarına yardımcı olur.
 
 > * 📖 [Yapılandırılmış Verilere Giriş - Search - Google Developers](https://developers.google.com/search/docs/guides/intro-structured-data)
+> * 📖 [RDFa - Linked Data in HTML](https://rdfa.info/)
+> * 📖 [JSON-LD](https://json-ld.org/)
+> * 📖 [Microdata](https://www.w3.org/TR/microdata/)
 > * 🛠 [Yapısal Veri Test Aracı](https://developers.google.com/structured-data/testing-tool/) ile sayfanızı test edin.
 > * 🛠 Yapısal veriler olarak kullanılabilecek tüm sözlüklerin listesi. [Schema.org Tam Hiyerarşi](http://schema.org/docs/full.html)
 
 * [ ] **Sitemap HTML:** ![Medium][medium_img] HTML sitemap'iniz bulunmalı ve sitenizin footer'ından bir link aracılığı ile ulaşılır olmalı.
 
 > * 📖 [Sitemap yönergeleri - Google Support](https://support.google.com/webmasters/answer/183668?hl=en)
-> * 🛠 [Sitemap Oluşturucu](https://websiteseochecker.com/html-sitemap-generator/)
 
 **[⬆ başa dön](#İçindekiler)**
 
@@ -678,10 +692,6 @@ Bu dal otomatik olarak [Front-End Checklist](http://frontendchecklist.com/) 'e y
 
 Bu dal, içeriğe gerektiği takdirde önemli değişiklikler yapmak için kullanılacaktır. Küçük hataları düzeltmek veya yeni bir madde eklemek için ana dalın kullanılması tercih edilir.
 
-### Katkıda Bulunanlar
-
-Katkıda bulunanları [buradan](https://github.com/thedaviddias/frontendchecklist/graphs/contributors) görüntüleyebilirsiniz.
-
 ## Destek
 
 Herhangi bir sorunuz veya öneriniz varsa, Gitter veya Twitter'ı kullanmaktan çekinmeyin:
@@ -694,12 +704,38 @@ Herhangi bir sorunuz veya öneriniz varsa, Gitter veya Twitter'ı kullanmaktan �
 
 **[David Dias](https://github.com/thedaviddias/Front-End-Checklist)**
 
+## Katkıda Bulunanlar
+
+Projeyi bu noktaya getiren tüm katılımcılara teşekkürler.[[Katkıda Bulun]](CONTRIBUTING.md).
+<a href="https://github.com/thedaviddias/Front-End-Checklist/graphs/contributors"><img src="https://opencollective.com/front-end-checklist/contributors.svg?width=890" /></a>
+
+## Destekleyenler
+
+Destekleyen herkese teşekkürler! 🙏 [[Destekle](https://opencollective.com/front-end-checklist#backer)]
+
+<a href="https://opencollective.com/front-end-checklist#backers" target="_blank"><img src="https://opencollective.com/front-end-checklist/backers.svg?width=890"></a>
+
+## Sponsorlar
+
+Destek olmak için projeye sponsor ol. Sitenizin linkini içeren logonuz burada görüntülenecek. [[Sponsor Ol](https://opencollective.com/front-end-checklist#sponsor)]
+
+<a href="https://opencollective.com/front-end-checklist/sponsor/0/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/front-end-checklist/sponsor/1/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/front-end-checklist/sponsor/2/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/2/avatar.svg"></a>
+<a href="https://opencollective.com/front-end-checklist/sponsor/3/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/3/avatar.svg"></a>
+<a href="https://opencollective.com/front-end-checklist/sponsor/4/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/4/avatar.svg"></a>
+<a href="https://opencollective.com/front-end-checklist/sponsor/5/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/5/avatar.svg"></a>
+<a href="https://opencollective.com/front-end-checklist/sponsor/6/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/6/avatar.svg"></a>
+<a href="https://opencollective.com/front-end-checklist/sponsor/7/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/7/avatar.svg"></a>
+<a href="https://opencollective.com/front-end-checklist/sponsor/8/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/8/avatar.svg"></a>
+<a href="https://opencollective.com/front-end-checklist/sponsor/9/website" target="_blank"><img src="https://opencollective.com/front-end-checklist/sponsor/9/avatar.svg"></a>
+
 ## Lisans
 
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 **[⬆ başa dön](#İçindekiler)**
 
-[low_img]: http://res.cloudinary.com/djnyaloac/image/upload/v1508238836/level-checklist-low.png
-[medium_img]: http://res.cloudinary.com/djnyaloac/image/upload/v1508238836/level-checklist-medium.png
-[high_img]: http://res.cloudinary.com/djnyaloac/image/upload/v1508238836/level-checklist-high.png
+[low_img]: https://front-end-checklist.now.sh/low.svg
+[medium_img]: https://front-end-checklist.now.sh/medium.svg
+[high_img]: https://front-end-checklist.now.sh/high.svg
