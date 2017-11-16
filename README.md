@@ -19,11 +19,11 @@ Liste, diğer açık kaynaklı listelerden gelen eklemelerle birlikte Front End 
 2. **[HTML](#html)**
 3. **[Webfonts](#webfonts)**
 4. **[CSS](#css)**
-5. **[Görseller](#images)**
+5. **[Görseller](#görseller)**
 6. **[JavaScript](#javascript)**
-7. **[Güvenlik](#security)**
-8. **[Performans](#performance-1)**
-9. **[Ulaşılabilirlik](#accessibility)**
+7. **[Güvenlik](#güvenlik)**
+8. **[Performans](#performans)**
+9. **[Ulaşılabilirlik](#ulaşılabilirlik)**
 10. **[SEO](#seo)**
 
 ## Nasıl kullanılır?
@@ -234,7 +234,7 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 > * 📖 [Twitter card'larına giriş — Twitter Developers](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started)
 > * 🛠 Sayfanızı [Twitter card doğrulayıcı](https://cards-dev.twitter.com/validator) ile test edin.
 
-**[⬆ başa dön](#table-of-contents)**
+**[⬆ başa dön](#İçindekiler)**
 
 ---
 
@@ -242,11 +242,11 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 ### En iyi teknikler
 
-* [ ] **HTML5 Semantik Elementler:** ![High][high_img] HTML5 Semantik Elementler doğru şekilde kullanılmalı (header, section, footer, main...).
+* [ ] **HTML5 Semantic Elements:** ![High][high_img] HTML5 Semantik Elementler doğru şekilde kullanılmalı (header, section, footer, main...).
 
 > * 📖 [HTML Reference](http://htmlreference.io/)
 
-* [ ] **Hata sayfaları:** ![High][high_img] 404 Hata sayfası and 5xx sayfası bulunmalıdır. 5xx hata sayfalarındaki CSSlerin sayfa içine entegre edilmesi gerektiği unutulmamalıdır. (Sunucuya herhangi bir çağrı yapımamalıdır).
+* [ ] **Error pages:** ![High][high_img] 404 Hata sayfası and 5xx sayfası bulunmalıdır. 5xx hata sayfalarındaki CSSlerin sayfa içine entegre edilmesi gerektiği unutulmamalıdır. (Sunucuya herhangi bir çağrı yapımamalıdır).
 
 * [ ] **Noopener:** ![Medium][medium_img] `target="_blank"` ile harici bağlantılar kullanmanız durumunda, tab nabbing'i önlemek için bağlantınız `rel="noopener"` niteliğine sahip olmalıdır. Eğer Firefox'un eski versiyonlarına destek vermek isterseniz `rel="noopener noreferrer"` şeklinde kullanabilirsiniz.
 
@@ -274,7 +274,7 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 
 
-**[⬆ başa dön](#table-of-contents)**
+**[⬆ başa dön](#İçindekiler)**
 
 ---
 
@@ -296,7 +296,7 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 > * 🛠 [Typekit Web Font Loader](https://github.com/typekit/webfontloader)
 
-**[⬆ başa dön](#table-of-contents)**
+**[⬆ başa dön](#İçindekiler)**
 
 ---
 
@@ -369,7 +369,7 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 > * 📖 [Building RTL-Aware Web Apps & Websites: Part 1 - Mozilla Hacks](https://hacks.mozilla.org/2015/09/building-rtl-aware-web-apps-and-websites-part-1/)
 > * 📖 [Building RTL-Aware Web Apps & Websites: Part 2 - Mozilla Hacks](https://hacks.mozilla.org/2015/10/building-rtl-aware-web-apps-websites-part-2/)
 
-**[⬆ başa dön](#table-of-contents)**
+**[⬆ başa dön](#İçindekiler)**
 
 ---
 
@@ -398,7 +398,7 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 * [ ] **Lazy loading:** ![Medium][medium_img] Resimler lazyload ile yüklenmeli. (Daima bir noscript alternatifi bulunmalı).
 
-**[⬆ başa dön](#table-of-contents)**
+**[⬆ başa dön](#İçindekiler)**
 
 ---
 
@@ -430,7 +430,7 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 > * 📖 [ESLint - JavaScript ve JSX için modüler linting asistanı](https://eslint.org/)
 
-**[⬆ başa dön](#table-of-contents)**
+**[⬆ başa dön](#İçindekiler)**
 
 ---
 
@@ -450,13 +450,13 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 > * 🛠 [Free SSL Server Test](https://www.ssllabs.com/ssltest/index.html)
 > * 📖 [Strict Transport Security](http://caniuse.com/#feat=stricttransportsecurity)
 
-* [ ] **HTTP Katı Taşıma Güvenliği (HSTS):** ![Medium][medium_img] HTTP header'ı 'Strict-Transport-Security' şeklinde ayarlanmalı.
+* [ ] **HTTP Strict Transport Security (HSTS):** ![Medium][medium_img] HTTP header'ı 'Strict-Transport-Security' şeklinde ayarlanmalı.
 
 > * 🛠 [Check HSTS preload status and eligibility](https://hstspreload.org/)
 > * 📖 [HTTP Strict Transport Security Cheat Sheet - OWASP](https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet)
 > * 📖 [Transport Layer Protection Cheat Sheet - OWASP](https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet)
 
-* [ ] **Siteler Arası İstek Sahteciliği (CSRF):** ![High][high_img] CSRF saldırılarını önlemek ve sunucuya yapılan isteklerin doğruluğu için gelen isteklerin web sitenizden / uygulamanızdan geldiğine emin olun.
+* [ ] **Cross Site Request Forgery (CSRF):** ![High][high_img] CSRF saldırılarını önlemek ve sunucuya yapılan isteklerin doğruluğu için gelen isteklerin web sitenizden / uygulamanızdan geldiğine emin olun.
 
 > * 📖 [Cross-Site Request Forgery (CSRF) Prevention Cheat Sheet  - OWASP](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet)
 
@@ -480,13 +480,13 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 > * 📖 [CSP Cheat Sheet - Scott Helme](https://scotthelme.co.uk/csp-cheat-sheet/)
 > * 📖 [CSP Cheat Sheet - OWASP](https://www.owasp.org/index.php/Content_Security_Policy_Cheat_Sheet)
 
-**[⬆ başa dön](#table-of-contents)**
+**[⬆ başa dön](#İçindekiler)**
 
 ---
 
 ## Performans
 
-### Best practices
+### En iyi teknikler
 
 - [ ] **Page weight:** ![High][high_img] Sayfa boyutları 0 ile 500 KB arasında olmalı.
 
@@ -498,13 +498,13 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 * [ ] **Lazy loading:** ![Medium][medium_img] Resim, script ve CSS dosyaları sayfa yanıt süresini iyileştirmek için lazyload ile yüklenmeli (Detaylı bilgiye kendi başlıkları altından ulaşılabilir).
 
-* [ ] **Cookie boyutu:** Eğer çerez kullanıyorsanız, her bir çerezin 4096 bayttan fazla olmadığına ve alan adınızın 20'den fazla çerez içermediğine emin olun.
+* [ ] **Cookie size:** Eğer çerez kullanıyorsanız, her bir çerezin 4096 bayttan fazla olmadığına ve alan adınızın 20'den fazla çerez içermediğine emin olun.
 
 > * 📖 [Cookie specification: RFC 6265](https://tools.ietf.org/html/rfc6265)
 > * 📖 [Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
 > * 🛠 [Browser Cookie Limits](http://browsercookielimits.squawky.net/)
 
-* [ ] **Üncü parti bileşenler:** ![Medium][medium_img] Third party iframes or components relying on external JS (like sharing buttons) are replaced by static components when possible, thus limiting calls to external APIs and keeping your users activity private.
+* [ ] **Third party components:** ![Medium][medium_img] Third party iframes or components relying on external JS (like sharing buttons) are replaced by static components when possible, thus limiting calls to external APIs and keeping your users activity private.
 
 > * 🛠 [Simple sharing buttons generator](https://simplesharingbuttons.com/)
 
@@ -547,13 +547,13 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 > * 🛠 [WebPagetest - Website Performance and Optimization Test](https://www.webpagetest.org/)
 > * 🛠 [GTmetrix - Website speed and performance optimization](https://gtmetrix.com/)
 
-**[⬆ başa dön](#table-of-contents)**
+**[⬆ başa dön](#İçindekiler)**
 
 ---
 
 ## Ulaşılabilirlik
 
-> **Notes:** Oynatma Listesi için: [A11ycasts with Rob Dodson](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g) 📹
+> **Notlar:** Oynatma Listesi için: [A11ycasts with Rob Dodson](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g) 📹
 
 ### En iyi teknikler
 
@@ -561,7 +561,7 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 
 > * 📖 [Enable / Disable JavaScript in Chrome Developer Tools](https://www.youtube.com/watch?v=kBmvq2cE0D8)
 
-- [ ] **Renk kontrastı:** ![Medium][medium_img] Renk kontrastı en azından WCAG AA(Mobil için AAA)'yı geçmelidir 
+- [ ] **Color contrast:** ![Medium][medium_img] Renk kontrastı en azından WCAG AA(Mobil için AAA)'yı geçmelidir 
 
 > * 🛠 [Contrast ratio](https://leaverou.github.io/contrast-ratio/)
 
@@ -629,7 +629,7 @@ Sayfanın yüklenmesi sırasında (Tüm içeriklerden önce) mutlaka görünmesi
 > * 📖 [Sitemap yönergeleri - Google Support](https://support.google.com/webmasters/answer/183668?hl=en)
 > * 🛠 [Sitemap Oluşturucu](https://websiteseochecker.com/html-sitemap-generator/)
 
-**[⬆ başa dön](#table-of-contents)**
+**[⬆ başa dön](#İçindekiler)**
 
 ---
 
@@ -658,7 +658,7 @@ Front-End Checklist Listesinin kurallarını izlediğinizi göstermek isterseniz
 [![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
 ```
 
-**[⬆ başa dön](#table-of-contents)**
+**[⬆ başa dön](#İçindekiler)**
 
 ---
 
@@ -698,7 +698,7 @@ Herhangi bir sorunuz veya öneriniz varsa, Gitter veya Twitter'ı kullanmaktan �
 
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-**[⬆ başa dön](#table-of-contents)**
+**[⬆ başa dön](#İçindekiler)**
 
 [low_img]: http://res.cloudinary.com/djnyaloac/image/upload/v1508238836/level-checklist-low.png
 [medium_img]: http://res.cloudinary.com/djnyaloac/image/upload/v1508238836/level-checklist-medium.png
