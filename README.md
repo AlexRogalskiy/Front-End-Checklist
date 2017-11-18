@@ -1,4 +1,10 @@
-# Front-End Checklist
+[![Front-End Checklist Logo](https://github.com/thedaviddias/Front-End-Checklist/blob/master/src/img/banners/front-end-checklist-banner-light.jpg?raw=true)](http://frontendchecklist.com)
+
+<h2 align="center"><a href="http://frontendchecklist.com">Front-End Checklist</a></h2>
+
+<p align="center">
+  <em>Front-End Checklist, HTML sayfanızı yayına almadan önce test etmeniz gereken tüm öğelerin kapsamlı bir listesidir.</em>
+</p>
 
 [![Join the chat at https://gitter.im/Front-End-Checklist/Lobby](https://badges.gitter.im/Front-End-Checklist/Lobby.svg)](https://gitter.im/Front-End-Checklist/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
@@ -6,8 +12,6 @@
 [![Contributors](https://img.shields.io/github/contributors/thedaviddias/Front-End-Checklist.svg)](https://github.com/thedaviddias/Front-End-Checklist/graphs/contributors)
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/thedaviddias/front-end-checklist)
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-**Front-End Checklist** HTML sayfanızı yayına almadan önce test etmeniz gereken tüm öğelerin kapsamlı bir listesidir.
 
 Liste, diğer açık kaynaklı listelerden gelen eklemelerle birlikte Front End geliştiricilerinin yıllara dayanan deneyimlerinin bir ürünüdür.
 
@@ -641,6 +645,18 @@ Browserconfig.xml dosyası için gerekli minimum xml betiği aşağıdaki gibidi
 * [ ] **Sitemap HTML:** ![Medium][medium_img] HTML sitemap'iniz bulunmalı ve sitenizin footer'ından bir link aracılığı ile ulaşılır olmalı.
 
 > * 📖 [Sitemap yönergeleri - Google Support](https://support.google.com/webmasters/answer/183668?hl=en)
+
+* [ ] **Pagination link tags:** ![Medium][medium_img] Sayfalanan içeriklerin linkleri `rel="prev"` ve `rel="next"` içermeli.
+
+> * 🛠 [Pagination (rel="prev/next") Testing Tool](https://technicalseo.com/seo-tools/rel-prev-next/)
+
+> * 📖 [Sayfalama yönergeleri - Google Support](https://support.google.com/webmasters/answer/1663744?hl=en)
+
+```html
+<!-- Örnek: Sayfalama listesinde bulunan 2.sayfanın linkleri -->
+<link rel="prev" href="https://example.com/?page=1">
+<link rel="next" href="https://example.com/?page=3">
+```
 
 **[⬆ başa dön](#İçindekiler)**
 
